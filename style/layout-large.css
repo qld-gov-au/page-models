@@ -1,0 +1,874 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+@charset "UTF-8";
+/* Visual theme for QGov Online */
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_header-large.scss */
+  #header-wrapper {
+    background: transparent;
+  }
+
+  /* line 7, ../../../src/qgov/assets/v2/style/template/_header-large.scss */
+  #header #nav-site {
+    display: block;
+  }
+
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_header-large.scss */
+  #qg-coa img {
+    margin-left: .85em;
+    margin-right: .85em;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_header-large.scss */
+  #banner {
+    background: transparent;
+  }
+}
+/* line 4, ../../../src/qgov/assets/v2/style/template/_global-alert-medium.scss */
+.global-alert .header,
+.global-alert .summary {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/template/_global-alert-medium.scss */
+.global-alert .header {
+  padding-right: 1em;
+  white-space: nowrap;
+}
+
+/* line 12, ../../../src/qgov/assets/v2/style/template/_global-alert-medium.scss */
+.global-alert .summary {
+  padding-left: 1em;
+  border-left: 1px groove rgba(255, 255, 255, 0.5);
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/template/_header-tools-medium.scss */
+#tools li {
+  float: left;
+}
+
+@media screen, projection, tv, handheld {
+  /* Utilities */
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_header-tools-medium.scss */
+  #tools {
+    float: right;
+  }
+}
+/* line 1, ../../../src/qgov/assets/v2/style/template/_breadcrumbs-large.scss */
+#breadcrumbs li {
+  float: left;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 6, ../../../src/qgov/assets/v2/style/template/_breadcrumbs-large.scss */
+  #breadcrumbs {
+    float: none;
+  }
+
+  /* line 9, ../../../src/qgov/assets/v2/style/template/_breadcrumbs-large.scss */
+  #breadcrumbs li {
+    padding-right: 10px;
+    background: transparent url(../images/skin/bullet-breadcrumb-separator.png) right center no-repeat;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_page-content-large.scss */
+  #page-container,
+  #breadcrumbs {
+    background: transparent;
+  }
+
+  /* line 8, ../../../src/qgov/assets/v2/style/template/_page-content-large.scss */
+  #page-container .max-width {
+    /* must be an image: position is altered by javascript */
+    background: #eaeaea;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* layout-large - 1024 */
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  body #access {
+    margin-bottom: 32px;
+  }
+
+  /* line 8, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #header-wrapper {
+    background: transparent;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #header .box-sizing,
+  #page-container,
+  #nav-site,
+  #fat-footer {
+    padding: 0 .7em;
+  }
+
+  /* Implement this for large and medium layout only. Not worth loading for small devices and will not work on browsers that don't support fixed positioning */
+  /* line 18, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #header-bg {
+    width: auto;
+    height: auto;
+    min-height: 524px;
+    /* background: #062a42 url(../images/skin/bg-banner.jpg) center top no-repeat; */
+  }
+
+  /* line 25, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .current-page:before,
+  .has-submenu .current:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    border-left: 1em solid #D8D8D8;
+    border-top: 1.4em solid rgba(255, 255, 255, 0);
+    border-bottom: 1.4em solid rgba(255, 255, 255, 0);
+  }
+
+  /* line 33, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .has-submenu:before {
+    border: none;
+  }
+
+  /* line 36, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #header .current-area {
+    background: #017197 url(../images/skin/bg-banner.jpg) -760px -38px no-repeat;
+  }
+
+  /* line 40, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article .box-sizing {
+    margin: 0;
+  }
+
+  /* line 43, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #page-feedback form {
+    margin: 0 .7em .7em .7em;
+  }
+
+  /* line 46, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #breadcrumbs ol {
+    margin: 0 0 0 .7em;
+    float: none;
+  }
+
+  /* line 50, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #nav-section {
+    width: 25%;
+  }
+
+  /* line 53, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #content-container {
+    width: 75%;
+  }
+
+  /* line 56, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #breadcrumbs {
+    width: 100%;
+  }
+
+  /* line 59, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #nav-site {
+    font-size: 100%;
+  }
+
+  /* line 62, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #tools {
+    float: right;
+    margin-right: 1em;
+    min-height: 53px;
+    /* To push nav-site below logo when wrapping */
+  }
+
+  /* line 68, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article, #document-properties, #post-page-options, #page-feedback {
+    width: 67%;
+  }
+
+  /* line 71, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article .box-sizing .border {
+    padding-left: 2em;
+    /* Leave room for the section nav current page arrowhead */
+  }
+
+  /* min-height for content area */
+  /* line 76, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #content > .article > .box-sizing > .border {
+    min-height: 30em;
+  }
+
+  /* line 82, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .franchise-index .article .box-sizing .border,
+  .franchise-index-with-asides .article .box-sizing .border,
+  .large-application .article .box-sizing .border {
+    padding-left: 1em;
+    /* Extra room not needed on franchise landing page */
+  }
+
+  /* line 85, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home .article .box-sizing .border {
+    padding: 0;
+  }
+
+  /* line 89, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #footer .box-sizing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 93, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #fat-footer .section {
+    width: 26%;
+    /* minimum width at 1024×768 res to stop "Queensland Government" h3 wrapping */
+    margin: 0 1% 0 2.5%;
+  }
+
+  /* line 97, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #fat-footer #for-qldrs-2 {
+    padding-top: 3.4em;
+  }
+
+  /* line 100, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #fat-footer .section#for-qldrs {
+    width: 36%;
+  }
+
+  /* line 103, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #fat-footer .section#for-qldrs ul {
+    float: left;
+    width: 50%;
+    *width: 49.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+
+  /* line 108, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #qg-branding {
+    display: block;
+    padding: 1em;
+  }
+
+  /* line 112, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #qg-branding .tagline {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* line 117, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #nav-section {
+    padding-top: 0;
+  }
+
+  /* line 120, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #nav-section .box-sizing {
+    padding-left: 1.5em;
+    padding-right: 0;
+  }
+
+  /* line 124, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #nav-section ul li.current-page {
+    /*background-image: url(../images/skin/bg-section-nav-arrow.png);*/
+    padding-right: 20px;
+  }
+
+  /* Skin-specific for large layout */
+  /* line 129, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #meta-wrapper {
+    width: 67%;
+  }
+
+  /* side-by-side comparisons */
+  /* line 134, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article .comparison {
+    float: left;
+    margin: 0 1% 0 0;
+    width: 49%;
+    *width: 48.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+
+  /* line 140, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article .comparison-first {
+    margin-right: 1%;
+    clear: left;
+  }
+
+  /* line 144, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .article .comparison-last {
+    margin-left: 1%;
+    margin-right: 0;
+    clear: right;
+  }
+
+  /* ASIDES */
+  /* line 154, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #asides {
+    width: 33%;
+    *width: 32.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    padding-top: 1em;
+  }
+
+  /* line 159, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #content #asides {
+    padding-top: 0;
+  }
+
+  /* line 162, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #asides .box-sizing {
+    /*padding-right: 1em;*/
+    padding: 0 .7em;
+  }
+
+  /* line 166, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #asides .box-sizing, #asides .box-sizing .border {
+    background: none;
+  }
+
+  /* line 169, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #asides .aside {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* INDEX PAGES (FRANCHISE and THEME) */
+  /* line 214, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .theme-index .article,
+  .theme-index #document-properties,
+  .theme-index #post-page-options,
+  .theme-index #page-feedback,
+  .theme-index #meta-wrapper,
+  .theme-index-with-asides .article,
+  .theme-index-with-asides #document-properties,
+  .theme-index-with-asides #post-page-options,
+  .theme-index-with-asides #page-feedback,
+  .theme-index-with-asides #meta-wrapper,
+  .audience-index .article,
+  .audience-index #document-properties,
+  .audience-index #post-page-options,
+  .audience-index #page-feedback,
+  .audience-index #meta-wrapper,
+  .franchise-index .article,
+  .home .article,
+  .franchise-index #document-properties,
+  .franchise-index #post-page-options,
+  .franchise-index #page-feedback,
+  .franchise-index #meta-wrapper,
+  .franchise-index #content-container,
+  .home #document-properties,
+  .home #post-page-options,
+  .home #page-feedback,
+  .home #meta-wrapper,
+  .home #content-container,
+  .franchise-index-with-asides .article,
+  .franchise-index-with-asides #document-properties,
+  .franchise-index-with-asides #post-page-options,
+  .franchise-index-with-asides #page-feedback,
+  .franchise-index-with-asides #meta-wrapper,
+  .franchise-index-with-asides #content-container,
+  .large-application .article,
+  .large-application #document-properties,
+  .large-application #post-page-options,
+  .large-application #page-feedback,
+  .large-application #meta-wrapper,
+  .large-application #content-container {
+    width: 100% !important;
+  }
+
+  /* line 224, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .theme-index #content .section,
+  .audience-index #content .section,
+  .theme-index-with-asides #content .section,
+  .franchise-index #content .section,
+  .home #content .section,
+  .franchise-index-with-asides #content .section,
+  .large-application #content .section {
+    max-width: 100%;
+  }
+
+  /* line 227, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .theme-index-with-asides #asides {
+    margin-top: -3.9em;
+  }
+
+  /* line 232, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .audience-index-with-asides #asides,
+  .franchise-index-with-asides #asides {
+    border: none;
+    float: right;
+    width: 25%;
+    *width: 24.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    margin-top: -3.9em;
+  }
+
+  /* line 239, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .franchise-index-with-asides h1 {
+    width: 72.1%;
+  }
+
+  /* line 242, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .theme-index-with-asides h1 {
+    width: 64.8%;
+    margin-left: -.5em;
+  }
+
+  /* slot 'related promotions' block under the IA */
+  /* line 254, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .franchise-index #related-promotions,
+  .home #related-promotions,
+  .franchise-index-with-asides #related-promotions,
+  .theme-index #related-promotions,
+  .audience-index #related-promotions,
+  .theme-index-with-asides #related-promotions {
+    clear: none;
+    float: left;
+    width: 75%;
+  }
+
+  /* Home styles */
+  /* line 261, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home #article {
+    float: left;
+    margin-left: 26%;
+    width: 48%;
+  }
+
+  /* line 266, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home #asides-primary {
+    float: left;
+    width: 26%;
+    *width: 25.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    margin-left: -74%;
+  }
+
+  /* line 272, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home #asides-secondary {
+    float: left;
+    width: 26%;
+    *width: 25.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+
+  /* line 277, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home #content #asides-primary .aside {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  /* line 281, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .home #content #asides-secondary .aside {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  /* Undo mobile enhancements */
+  /* line 294, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #access-instructions,
+  #fat-footer,
+  .home #services .contents,
+  .home #news .contents,
+  .home #featured .feature img,
+  .page-options,
+  .feed {
+    display: block;
+  }
+
+  /* line 298, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #footer li {
+    display: inline-block;
+  }
+
+  /* line 302, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  #fat-footer li {
+    display: block;
+  }
+
+  /* Global alert */
+  /* line 312, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .audience-index #global-alert h2,
+  .franchise-index #global-alert h2,
+  .franchise-index-with-asides #global-alert h2,
+  .large-application #global-alert h2,
+  .home #global-alert h2 {
+    float: left;
+  }
+
+  /* line 319, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .audience-index #global-alert .time,
+  .franchise-index #global-alert .time,
+  .franchise-index-with-asides #global-alert .time,
+  .large-application #global-alert .time,
+  .home #global-alert .time {
+    float: left;
+    clear: left;
+    padding-left: 60px;
+  }
+
+  /* line 328, ../../../src/qgov/assets/v2/style/template/_layout-large.scss */
+  .audience-index #global-alert .summary,
+  .franchise-index #global-alert .summary,
+  .franchise-index-with-asides #global-alert .summary,
+  .large-application #global-alert .summary,
+  .home #global-alert .summary {
+    background: transparent url(../images/skin/bg-global-alert-divider.png) left center no-repeat;
+    clear: none;
+    padding: 2em;
+    margin: -2em;
+    margin-left: 23.5em;
+  }
+}
+/* line 4, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+.franchise-index h1,
+.franchise-index-with-asides h1 {
+  margin: .5em 0 .3em;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+.theme-index h1,
+.theme-index-with-asides h1 {
+  margin: .5em 0 .3em -.5em;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+.franchise-index h1,
+.franchise-index-with-asides h1,
+.theme-index h1,
+.theme-index-with-asides h1,
+.audience-index h1,
+.topic-index h1,
+.topic-index-with-asides h1 {
+  background: #293942;
+  color: #fff;
+  font-size: 180%;
+  font-weight: normal;
+  padding: .5em .4em .3em;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 27, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia {
+    float: left;
+    width: 100%;
+    margin: -2em 0 1em -.5em;
+  }
+
+  /* line 32, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 {
+    clear: none;
+    float: left;
+    padding: 0;
+    margin: 1em 0;
+    position: relative;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 .inner {
+    background: #F9F9F9;
+    border: 1px solid #E7E7E7;
+    height: 90%;
+    margin-left: 58px;
+    margin-right: .5em;
+    padding: 1em 1em 1em 46px;
+  }
+
+  /* line 49, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia ul a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    background: transparent;
+    color: #546a9a;
+  }
+  /* line 60, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia ul a:hover {
+    background: transparent;
+    color: #546a9a;
+    text-decoration: underline;
+  }
+  /* line 65, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia ul a:active {
+    background: transparent;
+    color: #546a9a;
+    text-decoration: underline;
+  }
+
+  /* line 72, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia h2 a {
+    color: #0066cc;
+  }
+  /* line 74, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia h2 a:hover {
+    color: #0066cc;
+  }
+  /* line 77, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia h2 a:active {
+    color: #cc0000;
+  }
+
+  /* no thumbnails on deep (4th level?) IA pages */
+  /* line 85, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia.no-img .d1 .inner {
+    margin-left: .5em;
+    padding-left: 1em;
+  }
+
+  /* line 90, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 h2 {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0 1em 0 0;
+  }
+
+  /* line 96, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 h2 a .link-text {
+    display: block;
+  }
+
+  /* line 99, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 img {
+    background: #F9F9F9;
+    border: 1px solid #FFFEFC;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px;
+    display: block;
+    height: 75px;
+    left: 13px;
+    top: 1em;
+    width: 75px;
+  }
+
+  /* line 110, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 .inner img {
+    position: absolute;
+  }
+
+  /* line 113, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 a:hover img {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    border-color: #06c;
+  }
+
+  /* line 117, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 a:visited:hover img {
+    border-color: #576978;
+  }
+
+  /* Mini thumbs for high-level audience index */
+  /* line 122, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .residents-index #ia .d1 img {
+    width: 50px;
+    height: 50px;
+    top: .7em;
+  }
+
+  /* line 127, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .residents-index #ia .d1 .inner {
+    margin-left: 48px;
+    padding: 1em 1em .5em 30px;
+    min-height: 45px;
+  }
+
+  /* line 132, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .residents-index #ia li.flex-grid-new-row .inner {
+    margin-left: 40px;
+  }
+
+  /* line 136, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .audience-index #ia {
+    margin-top: 0;
+  }
+
+  /* line 141, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .audience-index #ia h2,
+  .audience-index #ia h3,
+  .audience-index #ia ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* line 145, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .audience-index #ia h2 {
+    padding-left: .5em;
+  }
+
+  /* line 148, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .audience-index #ia h3 {
+    font-size: 120%;
+    font-weight: bold;
+    padding-bottom: .5em;
+  }
+
+  /* line 153, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .audience-index #ia .section {
+    margin-top: .5em;
+  }
+
+  /* line 160, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .aside ul li,
+  #ia .d1 ul li,
+  .home #ia ul li,
+  .home #questions ol li {
+    list-style: square url(../images/skin/bullet-small-list.png);
+    margin: .5em 0;
+  }
+
+  /* line 165, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 p,
+  #ia .d1 ul {
+    padding: 0 1.5em 0 .8em;
+  }
+
+  /* line 168, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia li.no-thumb p {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  /* line 172, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia .d1 p {
+    padding: .5em 1em .5em 0;
+    margin: 0;
+  }
+
+  /* asides within related promotions */
+  /* line 179, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia-updates .aside,
+  #related-promotions .aside {
+    float: left;
+    width: 33%;
+    padding: 0;
+  }
+
+  /* line 184, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #related-promotions #featured {
+    width: 67%;
+  }
+
+  /* line 188, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia-updates .aside .aside-inner,
+  #related-promotions .aside .aside-inner {
+    /*margin: 0 .5em;*/
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* line 194, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  #ia-updates .flex-grid-new-row .aside-inner,
+  #related-promotions .flex-grid-new-row .aside-inner {
+    margin-left: 0;
+  }
+
+  /* Home styles */
+  /* line 199, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
+  .home #ia .section {
+    float: left;
+    width: 50%;
+    *width: 49.9% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 5, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .theme-index #ia .d1,
+  .audience-index #ia .d1 {
+    /* d1 for 'down one level' */
+    width: 33%;
+  }
+
+  /* line 8, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .theme-index-with-asides #ia {
+    width: 67%;
+  }
+
+  /* line 11, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .theme-index-with-asides #ia .d1 {
+    width: 50%;
+    *width: 49.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+
+  /* line 17, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .franchise-index #ia .d1,
+  .home #ia .d1 {
+    width: 25%;
+    *width: 24.95% !important;
+    /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .franchise-index-with-asides #ia {
+    width: 75.4%;
+  }
+
+  /* line 24, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .franchise-index-with-asides #ia .d1 {
+    width: 33%;
+  }
+
+  /* line 28, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .audience-index #ia #section-about {
+    float: left;
+    width: 66%;
+  }
+
+  /* line 32, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .audience-index #ia #section-about .d1 {
+    width: 50%;
+  }
+
+  /* line 35, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .audience-index #ia #section-for {
+    float: left;
+    width: 34%;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/page-model/_ia-large.scss */
+  .audience-index #ia #section-for .d1 {
+    width: 100%;
+  }
+}
+/* Medium and large layout, use grid layout for definition list */
+/* definition list details */
+/* line 7, ../../../src/qgov/assets/v2/style/pattern/_data-medium.scss */
+dl.grid {
+  position: relative;
+  margin: .5em 0 .5em 0;
+  padding-left: 8em;
+}
+/* line 12, ../../../src/qgov/assets/v2/style/pattern/_data-medium.scss */
+dl.grid dd {
+  padding: 0 0 .75em;
+}
+/* line 15, ../../../src/qgov/assets/v2/style/pattern/_data-medium.scss */
+dl.grid dt {
+  margin-top: 0;
+  position: absolute;
+  margin-left: -8em;
+  width: 7em;
+}
+
+/* Medium and large layout, use grid layout for definition list */
+/* event details */
+/* line 6, ../../../src/qgov/assets/v2/style/pattern/_events-medium.scss */
+.vevent dl {
+  position: relative;
+  margin: .5em 0 .5em 8em;
+}
+
+/* line 10, ../../../src/qgov/assets/v2/style/pattern/_events-medium.scss */
+.vevent dl dd {
+  padding: 0 0 .75em;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/pattern/_events-medium.scss */
+.vevent dl dt {
+  margin-top: 0;
+  position: absolute;
+  left: -8em;
+  width: 7em;
+}

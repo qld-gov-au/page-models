@@ -1,0 +1,388 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+@media screen, projection, tv, handheld {
+  /* line 34, ../../../src/qgov/assets/v2/style/base/_hasLayout-oldie.scss */
+  #nav-site,
+  #header .max-width,
+  #header .box-sizing,
+  #nav-site .max-width,
+  #nav-site .box-sizing,
+  #nav-site ul ul li,
+  #nav-site ul ul li a,
+  #search-form div,
+  #breadcrumbs ol,
+  #page-container,
+  #content-container,
+  #nav-section .box-sizing,
+  .article .box-sizing,
+  .article .box-sizing .border,
+  .questions li,
+  #asides .box-sizing,
+  #asides .border,
+  .aside,
+  .section-header,
+  .page-options,
+  #footer .box-sizing,
+  #qg-coa,
+  #site-name,
+  #footer,
+  ul.tabs,
+  .viewport,
+  .viewport-inner,
+  .short-list .viewport,
+  .short-list ul,
+  .image-gallery,
+  #featured {
+    _zoom: 1;
+    /* IE6 */
+  }
+
+  /* line 51, ../../../src/qgov/assets/v2/style/base/_hasLayout-oldie.scss */
+  #page-container,
+  #page-container .max-width,
+  #pre-page-options,
+  #meta-wrapper,
+  #meta-wrapper .meta-box-sizing,
+  .article .box-sizing .border,
+  #meta-wrapper .meta-box-sizing .border,
+  .aside .aside-inner,
+  #page-feedback-privacy,
+  ol.questions,
+  #pre-page-options,
+  #pre-page-options ul,
+  #post-page-options,
+  #post-page-options ul {
+    *zoom: 1;
+    /* IE6 & 7 */
+  }
+}
+/* template */
+@media screen, projection, tv, handheld {
+  /* Max-width for IE 6 */
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_init-oldie.scss */
+  * html.ie6-max-width .max-width {
+    width: 1312px;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* Skip links display poorly */
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_access-links-oldie.scss */
+  #access a {
+    *white-space: nowrap;
+    /* IE 6 & 7 */
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #header .box-sizing {
+    _overflow: visible;
+    /* IE6 */
+  }
+
+  /* Don't use transparency for IE 6 */
+  /* line 13, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  body #header .current-area,
+  body #header .current-area a,
+  body #header .current-area a:link,
+  body #header .current-area a:visited,
+  body #header .current-area a:hover,
+  body #page-container .max-width {
+    _background: transparent url("../images/skin/bg-header-ie6.png") repeat left top;
+  }
+
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  body #header-bg {
+    _zoom: 1;
+    /* IE6 weirdness */
+    _width: 100%;
+    /* IE6 needs some encouraging */
+    _height: 524px;
+    /* min-height for IE6 */
+    _overflow: visible;
+  }
+
+  /* header wrapping is poor in IE6&7 at some resolutions */
+  /* line 23, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #header #nav-site {
+    *width: 23.5em;
+  }
+
+  /* line 26, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #tools {
+    /* min-height for IE6 */
+    _height: 53px;
+    /* To push nav-site below logo when wrapping */
+    _overflow: visible;
+  }
+
+  /* line 30, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #search-form div {
+    _display: inline;
+  }
+
+  /* line 33, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #tools #search-query {
+    _height: 31px;
+    /* min-height for IE6 */
+  }
+
+  /* site name double margin bug 
+  http://www.positioniseverything.net/explorer/floatIndent.html */
+  /* line 38, ../../../src/qgov/assets/v2/style/template/_header-oldie.scss */
+  #site-name {
+    _display: inline;
+    /* IE6 */
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert h2,
+  .global-alert .time {
+    _position: relative;
+    /* IE6 peekaboo */
+  }
+
+  /* line 8, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert .time {
+    _margin-top: -2em;
+    /* Me: IE6, where are you getting that extra space from? IE6: Space!! I wanna go to spaaaaace! */
+  }
+
+  /* line 11, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#CE0B2D',EndColorStr='#B20A2B');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#CE0B2D',EndColorStr='#B20A2B')";
+  }
+
+  /* line 15, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert .summary {
+    padding-left: 1em;
+    border-left: 1px solid #B85B6C;
+    *border-left: none;
+  }
+
+  /* line 24, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert a {
+    _color: #FFF !important;
+    _text-decoration: none !important;
+  }
+  /* line 29, ../../../src/qgov/assets/v2/style/template/_global-alert-oldie.scss */
+  .global-alert a:hover, .global-alert a:active {
+    _text-decoration: underline !important;
+  }
+}
+/* line 4, ../../../src/qgov/assets/v2/style/template/_nav-site-bar-oldie.scss */
+#nav-site .max-width,
+#nav-site .box-sizing {
+  _zoom: 1;
+  /* IE6 hasLayout (so background colour will be filled) */
+}
+
+/* line 7, ../../../src/qgov/assets/v2/style/template/_nav-site-bar-oldie.scss */
+#nav-site {
+  *width: auto;
+  /* override workarounds-ie.css (preset width when #nav-site is high-level audience tabs) */
+}
+
+/* line 12, ../../../src/qgov/assets/v2/style/template/_nav-site-bar-oldie.scss */
+#nav-site .max-width,
+#nav-site .max-width a:link,
+#nav-site .max-width a:visited {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF2C9EFE',EndColorStr='#FF0055A4');
+  /* AARRGGBB */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF2C9EFE',EndColorStr='#FF0055A4')";
+  /* AARRGGBB */
+}
+
+/* line 17, ../../../src/qgov/assets/v2/style/template/_nav-site-bar-oldie.scss */
+#nav-site .max-width a:hover,
+#nav-site .max-width a:active {
+  /* reverse gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF0055A4',EndColorStr='#FF2C9EFE');
+  /* AARRGGBB */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF0055A4',EndColorStr='#FF2C9EFE')";
+  /* AARRGGBB */
+}
+
+@media screen, projection, tv, handheld {
+  /* line 7, ../../../src/qgov/assets/v2/style/template/_nav-oldie.scss */
+  #access li,
+  #tools li,
+  #nav-site li,
+  #footer li {
+    _background: expression(this.previousSibling ? undefined : 'none');
+    /* IE 6 .first-child */
+  }
+
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_nav-oldie.scss */
+  #breadcrumbs li {
+    _background: expression(this.nextSibling ? undefined : 'none');
+    /* IE 6 .last-child */
+  }
+
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_nav-oldie.scss */
+  #nav-section,
+  #asides,
+  .article {
+    _overflow: hidden;
+    /* IE6 */
+  }
+
+  /* section navigation */
+  /* line 21, ../../../src/qgov/assets/v2/style/template/_nav-oldie.scss */
+  #nav-section li {
+    /* Spacing for IE6 */
+    _margin-top: .2em;
+    _margin-bottom: .2em;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* Avoid flicker IE6 & 7 */
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_page-content-oldie.scss */
+  body.layout-large #nav-section {
+    *width: 24.95% !important;
+  }
+
+  /* line 8, ../../../src/qgov/assets/v2/style/template/_page-content-oldie.scss */
+  body.layout-medium #nav-section {
+    *width: 33.95% !important;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_document-properties-oldie.scss */
+  #meta-wrapper {
+    _margin-bottom: 0;
+    /* IE6 doesn't like the negative margin */
+    _padding-bottom: .7em;
+    /* Give IE6 a little space instead */
+  }
+}
+@media screen, projection, tv, handheld {
+  /* stop these images wrapping in IE6&7 */
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_page-options-oldie.scss */
+  #post-page-options li.feedback {
+    white-space: nowrap;
+    *width: 265px;
+    position: relative;
+    /* IE cleartype fix when using filters */
+  }
+
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_page-options-oldie.scss */
+  #post-page-options .button {
+    *display: inline;
+    *padding: .5em 1.5em;
+  }
+
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_page-options-oldie.scss */
+  #post-page-options .button:hover,
+  #post-page-options .button:focus {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF3085A2',EndColorStr='#FF234A68');
+    /* AARRGGBB */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF3085A2',EndColorStr='#FF234A68')";
+    /* AARRGGBB */
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/template/_page-options-oldie.scss */
+  #post-page-options .button:active {
+    /* reverse gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF234A68',EndColorStr='#FF3085A2');
+    /* AARRGGBB */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF234A68',EndColorStr='#FF3085A2')";
+    /* AARRGGBB */
+  }
+
+  /* line 27, ../../../src/qgov/assets/v2/style/template/_page-options-oldie.scss */
+  #post-page-options li.share {
+    *white-space: nowrap;
+    *width: 250px;
+    /* IE6 needs this set 2px wider than it actually is :( */
+  }
+}
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_footer-oldie.scss */
+  #footer li {
+    *display: inline !important;
+    /* IE 6 & 7 */
+  }
+
+  /* line 7, ../../../src/qgov/assets/v2/style/template/_footer-oldie.scss */
+  #footer li a {
+    *display: inline;
+    /* IE 6 & 7 */
+  }
+
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_footer-oldie.scss */
+  #footer #fat-footer .section {
+    /* IE6 needs higher specificity, why? */
+    _margin-left: 1%;
+    _margin-right: 1%;
+  }
+
+  /* line 15, ../../../src/qgov/assets/v2/style/template/_footer-oldie.scss */
+  #fat-footer li a {
+    *display: block;
+    /* IE 6 & 7 */
+  }
+}
+/* printing */
+@media print {
+  /* line 5, ../../../src/qgov/assets/v2/style/template/_print-oldie.scss */
+  #breadcrumbs a {
+    *border-left: 1px solid #333;
+    *padding-left: .5em;
+  }
+
+  /* line 9, ../../../src/qgov/assets/v2/style/template/_print-oldie.scss */
+  #breadcrumbs .nav-home a {
+    *border-left: none;
+    *padding-left: 0;
+  }
+}
+/* lightbox */
+/* butterfly lightbox IE6 hacks */
+/* line 4, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html #jb-overlay {
+  position: absolute !important;
+  top: expression(eval(document.documentElement.scrollTop));
+  height: expression(eval(document.documentElement.clientHeight) + 'px');
+  filter: alpha(opacity=70);
+}
+
+/* line 10, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html #jb-window {
+  position: absolute;
+  top: expression(eval(document.documentElement.scrollTop));
+  height: expression(eval(document.documentElement.clientHeight) + 'px');
+}
+
+/* line 15, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html #jb-window.reactive {
+  background-image: url(../images/skin/reactive-overlay.gif);
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html #jb-window-inner {
+  margin-top: expression((( this.parentNode.clientHeight - this.clientHeight ) / 2 ) + "px" );
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto !important;
+}
+
+/* line 24, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html #jb-window-content {
+  overflow: hidden;
+}
+
+/* IE6 Fixed Position Jitter Fix */
+/* line 30, ../../../src/qgov/assets/v2/style/pattern/_butterfly-ie.scss */
+* html {
+  background-image: url(about:blank);
+  background-attachment: fixed;
+}
+
+/* patterns */
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/pattern/_scrollable-ie.scss */
+  .scrollable {
+    border-right: 1px dashed #D6D6D6;
+  }
+}

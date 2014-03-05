@@ -1,0 +1,2638 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+/*! jQuery UI - v1.10.2 - 2013-04-10
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CHelvetica%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=0&bgColorHeader=%23293942&bgTextureHeader=flat&bgImgOpacityHeader=75&borderColorHeader=%23293942&fcHeader=%23fff&iconColorHeader=%23fff&bgColorContent=%23ffffff&bgTextureContent=flat&bgImgOpacityContent=100&borderColorContent=%23E7E7E7&fcContent=%23000&iconColorContent=%23000&bgColorDefault=%23e6e6e6&bgTextureDefault=flat&bgImgOpacityDefault=75&borderColorDefault=%23e6e6e6&fcDefault=%23555555&iconColorDefault=%23888888&bgColorHover=%23559FB8&bgTextureHover=flat&bgImgOpacityHover=100&borderColorHover=%23559FB8&fcHover=%23fff&iconColorHover=%23454545&bgColorActive=%23ffffff&bgTextureActive=flat&bgImgOpacityActive=65&borderColorActive=%23aaaaaa&fcActive=%23212121&iconColorActive=%23454545&bgColorHighlight=%23FFFBE6&bgTextureHighlight=flat&bgImgOpacityHighlight=55&borderColorHighlight=%23FFE7AC&fcHighlight=%23363636&iconColorHighlight=%232e83ff&bgColorError=%23fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=%23cd0a0a&fcError=%23cd0a0a&iconColorError=%23cd0a0a&bgColorOverlay=%2331312f&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=70&bgColorShadow=%23aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=5&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
+/* Layout helpers
+----------------------------------*/
+/* line 11, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-hidden {
+  display: none;
+}
+
+/* line 14, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 24, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+/* line 35, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+
+/* line 40, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-clearfix:after {
+  clear: both;
+}
+
+/* line 43, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-clearfix {
+  min-height: 0;
+  /* support: IE7 */
+}
+
+/* line 46, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+/* line 56, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-front {
+  z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 63, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 72, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 84, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 91, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable {
+  position: relative;
+}
+
+/* line 94, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+}
+
+/* line 100, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+  display: none;
+}
+
+/* line 103, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0;
+}
+
+/* line 110, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+
+/* line 117, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 124, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+
+/* line 131, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+
+/* line 138, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px;
+}
+
+/* line 145, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px;
+}
+
+/* line 152, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px;
+}
+
+/* line 159, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-selectable-helper {
+  position: absolute;
+  z-index: 100;
+  border: 1px dotted black;
+}
+
+/* line 164, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-header {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  padding: .5em .5em .5em .7em;
+  min-height: 0;
+  /* support: IE7 */
+}
+
+/* line 172, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+
+/* line 175, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-noicons {
+  padding-left: .7em;
+}
+
+/* line 178, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+
+/* line 181, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 187, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.2em;
+  border-top: 0;
+  overflow: auto;
+}
+
+/* line 192, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-autocomplete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+
+/* line 198, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  line-height: normal;
+  margin-right: .1em;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  overflow: visible;
+  /* removes extra width in IE */
+}
+
+/* line 213, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+  text-decoration: none;
+}
+
+/* to make room for the icon, a width needs to be set here */
+/* line 217, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-icon-only {
+  width: 2.2em;
+}
+
+/* button elements seem to need a little more width */
+/* line 221, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+button.ui-button-icon-only {
+  width: 2.4em;
+}
+
+/* line 224, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-icons-only {
+  width: 3.4em;
+}
+
+/* line 227, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+button.ui-button-icons-only {
+  width: 3.7em;
+}
+
+/* button text element */
+/* line 232, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button .ui-button-text {
+  display: block;
+  line-height: normal;
+}
+
+/* line 236, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-only .ui-button-text {
+  padding: .4em 1em;
+}
+
+/* line 240, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+  padding: .4em;
+  text-indent: -9999999px;
+}
+
+/* line 245, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+  padding: .4em 1em .4em 2.1em;
+}
+
+/* line 249, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+  padding: .4em 2.1em .4em 1em;
+}
+
+/* line 252, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-icons .ui-button-text {
+  padding-left: 2.1em;
+  padding-right: 2.1em;
+}
+
+/* no icon support for input elements, provide padding by default */
+/* line 257, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+input.ui-button {
+  padding: .4em 1em;
+}
+
+/* button icon element(s) */
+/* line 266, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 271, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-icon-only .ui-icon {
+  left: 50%;
+  margin-left: -8px;
+}
+
+/* line 277, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+  left: .5em;
+}
+
+/* line 282, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+  right: .5em;
+}
+
+/* button sets */
+/* line 287, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-buttonset {
+  margin-right: 7px;
+}
+
+/* line 290, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-buttonset .ui-button {
+  margin-left: 0;
+  margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+/* line 298, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 302, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+/* line 307, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+}
+
+/* line 312, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+/* line 319, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  top: 1px;
+}
+
+/* line 322, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+}
+
+/* line 325, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+}
+
+/* line 328, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 1px;
+}
+
+/* line 331, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-next-hover {
+  right: 1px;
+}
+
+/* line 335, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+/* line 343, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+/* line 348, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+
+/* line 352, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker select.ui-datepicker-month-year {
+  width: 100%;
+}
+
+/* line 356, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+
+/* line 359, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+}
+
+/* line 365, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+}
+
+/* line 371, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker td {
+  border: 0;
+  padding: 1px;
+}
+
+/* line 376, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: .2em;
+  text-align: right;
+  text-decoration: none;
+}
+
+/* line 382, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+/* line 390, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 398, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+/* with multiple calendars */
+/* line 403, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+/* line 406, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+
+/* line 409, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+/* line 413, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+/* line 416, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+/* line 419, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+/* line 423, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+/* line 426, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+/* line 429, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+
+/* RTL support */
+/* line 436, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+
+/* line 439, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-prev {
+  right: 2px;
+  left: auto;
+}
+
+/* line 443, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-next {
+  left: 2px;
+  right: auto;
+}
+
+/* line 447, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+  right: 1px;
+  left: auto;
+}
+
+/* line 451, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+  left: 1px;
+  right: auto;
+}
+
+/* line 455, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+
+/* line 458, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+
+/* line 462, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+
+/* line 466, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* line 470, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .2em;
+  outline: 0;
+}
+
+/* line 477, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-titlebar {
+  padding: .4em 1em;
+  position: relative;
+}
+
+/* line 481, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  margin: .1em 0;
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 489, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 21px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 20px;
+}
+
+/* line 498, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: none;
+  overflow: auto;
+}
+
+/* line 505, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-buttonpane {
+  text-align: left;
+  border-width: 1px 0 0 0;
+  background-image: none;
+  margin-top: .5em;
+  padding: .3em 1em .5em .4em;
+}
+
+/* line 512, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: right;
+}
+
+/* line 515, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  margin: .5em .4em .5em 0;
+  cursor: pointer;
+}
+
+/* line 519, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-dialog .ui-resizable-se {
+  width: 12px;
+  height: 12px;
+  right: -5px;
+  bottom: -5px;
+  background-position: 16px 16px;
+}
+
+/* line 526, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+/* line 529, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu {
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+  display: block;
+  outline: none;
+}
+
+/* line 536, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu {
+  margin-top: -3px;
+  position: absolute;
+}
+
+/* line 540, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu-item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 545, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu-divider {
+  margin: 5px -2px 5px -2px;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-width: 1px 0 0 0;
+}
+
+/* line 552, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: 2px .4em;
+  line-height: 1.5;
+  min-height: 0;
+  /* support: IE7 */
+  font-weight: normal;
+}
+
+/* line 561, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: normal;
+  margin: -1px;
+}
+
+/* line 566, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-state-disabled {
+  font-weight: normal;
+  margin: .4em 0 .2em;
+  line-height: 1.5;
+}
+
+/* line 571, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-state-disabled a {
+  cursor: default;
+}
+
+/* icon support */
+/* line 576, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu-icons {
+  position: relative;
+}
+
+/* line 579, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu-icons .ui-menu-item a {
+  position: relative;
+  padding-left: 2em;
+}
+
+/* left-aligned */
+/* line 585, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-icon {
+  position: absolute;
+  top: .2em;
+  left: .2em;
+}
+
+/* right-aligned */
+/* line 592, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-menu .ui-menu-icon {
+  position: static;
+  float: right;
+}
+
+/* line 596, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-progressbar {
+  height: 2em;
+  text-align: left;
+  overflow: hidden;
+}
+
+/* line 601, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-progressbar .ui-progressbar-value {
+  margin: -1px;
+  height: 100%;
+}
+
+/* line 605, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-progressbar .ui-progressbar-overlay {
+  background: url("../images/jquery-ui/animated-overlay.gif");
+  height: 100%;
+  filter: alpha(opacity=25);
+  opacity: 0.25;
+}
+
+/* line 611, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-progressbar-indeterminate .ui-progressbar-value {
+  background-image: none;
+}
+
+/* line 614, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+/* line 618, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+}
+
+/* line 625, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+/* line 636, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}
+
+/* line 640, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-horizontal {
+  height: .8em;
+}
+
+/* line 643, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.3em;
+  margin-left: -.6em;
+}
+
+/* line 647, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+/* line 651, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+/* line 654, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* line 658, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-vertical {
+  width: .8em;
+  height: 100px;
+}
+
+/* line 662, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-vertical .ui-slider-handle {
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+
+/* line 667, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+
+/* line 671, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+
+/* line 674, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0;
+}
+
+/* line 677, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* line 684, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner-input {
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: .2em 0;
+  vertical-align: middle;
+  margin-left: .4em;
+  margin-right: 22px;
+}
+
+/* line 694, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner-button {
+  width: 16px;
+  height: 50%;
+  font-size: .5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  cursor: default;
+  display: block;
+  overflow: hidden;
+  right: 0;
+}
+
+/* more specificity required here to overide default borders */
+/* line 708, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner a.ui-spinner-button {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+/* vertical centre icon */
+/* line 714, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner .ui-icon {
+  position: absolute;
+  margin-top: -8px;
+  top: 50%;
+  left: 0;
+}
+
+/* line 720, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner-up {
+  top: 0;
+}
+
+/* line 723, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner-down {
+  bottom: 0;
+}
+
+/* TR overrides */
+/* line 728, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-spinner .ui-icon-triangle-1-s {
+  /* need to fix icons sprite */
+  background-position: -65px -16px;
+}
+
+/* line 732, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs {
+  position: relative;
+  /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+  padding: .2em;
+}
+
+/* line 736, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+
+/* line 740, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 1px .2em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* line 750, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav li a {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
+/* line 755, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+
+/* line 761, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+  cursor: text;
+}
+
+/* line 765, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+  cursor: pointer;
+}
+
+/* line 768, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none;
+}
+
+/* line 774, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-tooltip {
+  padding: 8px;
+  position: absolute;
+  z-index: 9999;
+  max-width: 300px;
+  -webkit-box-shadow: 0 0 5px #aaa;
+  box-shadow: 0 0 5px #aaa;
+}
+
+/* line 782, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+body .ui-tooltip {
+  border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+/* line 788, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget {
+  font-family: Verdana,Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 792, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+/* line 798, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: Verdana,Helvetica,Arial,sans-serif;
+  font-size: 1em;
+}
+
+/* line 802, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-content {
+  border: 1px solid #E7E7E7;
+  background: white url(../images/jquery-ui/ui-bg_flat_100_ffffff_40x100.png) 50% 50% repeat-x;
+  color: #000;
+}
+
+/* line 807, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-content a {
+  color: #000;
+}
+
+/* line 810, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-header {
+  border: 1px solid #293942;
+  background: #293942 url(../images/jquery-ui/ui-bg_flat_75_293942_40x100.png) 50% 50% repeat-x;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* line 816, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-header a {
+  color: #fff;
+}
+
+/* Interaction states
+----------------------------------*/
+/* line 824, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #e6e6e6;
+  background: #e6e6e6 url(../images/jquery-ui/ui-bg_flat_75_e6e6e6_40x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  color: #555555;
+}
+
+/* line 832, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none;
+}
+
+/* line 841, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #559FB8;
+  background: #559fb8 url(../images/jquery-ui/ui-bg_flat_100_559FB8_40x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  color: #000;
+}
+
+/* line 850, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 856, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  border: 1px solid #aaaaaa;
+  background: white url(../images/jquery-ui/ui-bg_flat_65_ffffff_40x100.png) 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121;
+}
+
+/* line 864, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 873, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #FFE7AC;
+  background: #fffbe6 url(../images/jquery-ui/ui-bg_flat_55_FFFBE6_40x100.png) 50% 50% repeat-x;
+  color: #363636;
+}
+
+/* line 880, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+  color: #363636;
+}
+
+/* line 885, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #fef1ec url(../images/jquery-ui/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+  color: #cd0a0a;
+}
+
+/* line 892, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+  color: #cd0a0a;
+}
+
+/* line 897, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+  color: #cd0a0a;
+}
+
+/* line 902, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+/* line 907, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal;
+}
+
+/* line 914, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none;
+}
+
+/* line 919, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 927, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 932, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon,
+.ui-widget-content .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_000_256x240.png);
+}
+
+/* line 935, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-header .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_fff_256x240.png);
+}
+
+/* line 938, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-default .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_888888_256x240.png);
+}
+
+/* line 942, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_454545_256x240.png);
+}
+
+/* line 945, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-active .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_454545_256x240.png);
+}
+
+/* line 948, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-highlight .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_2e83ff_256x240.png);
+}
+
+/* line 952, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+  background-image: url(../images/jquery-ui/ui-icons_cd0a0a_256x240.png);
+}
+
+/* positioning */
+/* line 957, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-blank {
+  background-position: 16px 16px;
+}
+
+/* line 958, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-n {
+  background-position: 0 0;
+}
+
+/* line 959, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-ne {
+  background-position: -16px 0;
+}
+
+/* line 960, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-e {
+  background-position: -32px 0;
+}
+
+/* line 961, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-se {
+  background-position: -48px 0;
+}
+
+/* line 962, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-s {
+  background-position: -64px 0;
+}
+
+/* line 963, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-sw {
+  background-position: -80px 0;
+}
+
+/* line 964, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-w {
+  background-position: -96px 0;
+}
+
+/* line 965, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-1-nw {
+  background-position: -112px 0;
+}
+
+/* line 966, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0;
+}
+
+/* line 967, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0;
+}
+
+/* line 968, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px;
+}
+
+/* line 969, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px;
+}
+
+/* line 970, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+/* line 971, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px;
+}
+
+/* line 972, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+/* line 973, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px;
+}
+
+/* line 974, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px;
+}
+
+/* line 975, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px;
+}
+
+/* line 976, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px;
+}
+
+/* line 977, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px;
+}
+
+/* line 978, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px;
+}
+
+/* line 979, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px;
+}
+
+/* line 980, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px;
+}
+
+/* line 981, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px;
+}
+
+/* line 982, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px;
+}
+
+/* line 983, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px;
+}
+
+/* line 984, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px;
+}
+
+/* line 985, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px;
+}
+
+/* line 986, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px;
+}
+
+/* line 987, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px;
+}
+
+/* line 988, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px;
+}
+
+/* line 989, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px;
+}
+
+/* line 990, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px;
+}
+
+/* line 991, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px;
+}
+
+/* line 992, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px;
+}
+
+/* line 993, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px;
+}
+
+/* line 994, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px;
+}
+
+/* line 995, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px;
+}
+
+/* line 996, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px;
+}
+
+/* line 997, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px;
+}
+
+/* line 998, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px;
+}
+
+/* line 999, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px;
+}
+
+/* line 1000, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px;
+}
+
+/* line 1001, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px;
+}
+
+/* line 1002, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px;
+}
+
+/* line 1003, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px;
+}
+
+/* line 1004, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px;
+}
+
+/* line 1005, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px;
+}
+
+/* line 1006, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px;
+}
+
+/* line 1007, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px;
+}
+
+/* line 1008, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px;
+}
+
+/* line 1009, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px;
+}
+
+/* line 1010, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px;
+}
+
+/* line 1011, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px;
+}
+
+/* line 1012, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px;
+}
+
+/* line 1013, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px;
+}
+
+/* line 1014, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px;
+}
+
+/* line 1015, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px;
+}
+
+/* line 1016, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px;
+}
+
+/* line 1017, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px;
+}
+
+/* line 1018, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px;
+}
+
+/* line 1019, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px;
+}
+
+/* line 1020, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px;
+}
+
+/* line 1021, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px;
+}
+
+/* line 1022, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-4 {
+  background-position: 0 -80px;
+}
+
+/* line 1023, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px;
+}
+
+/* line 1024, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-extlink {
+  background-position: -32px -80px;
+}
+
+/* line 1025, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-newwin {
+  background-position: -48px -80px;
+}
+
+/* line 1026, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-refresh {
+  background-position: -64px -80px;
+}
+
+/* line 1027, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-shuffle {
+  background-position: -80px -80px;
+}
+
+/* line 1028, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px;
+}
+
+/* line 1029, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px;
+}
+
+/* line 1030, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px;
+}
+
+/* line 1031, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-folder-open {
+  background-position: -16px -96px;
+}
+
+/* line 1032, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-document {
+  background-position: -32px -96px;
+}
+
+/* line 1033, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-document-b {
+  background-position: -48px -96px;
+}
+
+/* line 1034, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-note {
+  background-position: -64px -96px;
+}
+
+/* line 1035, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-mail-closed {
+  background-position: -80px -96px;
+}
+
+/* line 1036, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-mail-open {
+  background-position: -96px -96px;
+}
+
+/* line 1037, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-suitcase {
+  background-position: -112px -96px;
+}
+
+/* line 1038, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-comment {
+  background-position: -128px -96px;
+}
+
+/* line 1039, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-person {
+  background-position: -144px -96px;
+}
+
+/* line 1040, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-print {
+  background-position: -160px -96px;
+}
+
+/* line 1041, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-trash {
+  background-position: -176px -96px;
+}
+
+/* line 1042, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-locked {
+  background-position: -192px -96px;
+}
+
+/* line 1043, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-unlocked {
+  background-position: -208px -96px;
+}
+
+/* line 1044, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-bookmark {
+  background-position: -224px -96px;
+}
+
+/* line 1045, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-tag {
+  background-position: -240px -96px;
+}
+
+/* line 1046, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-home {
+  background-position: 0 -112px;
+}
+
+/* line 1047, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-flag {
+  background-position: -16px -112px;
+}
+
+/* line 1048, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-calendar {
+  background-position: -32px -112px;
+}
+
+/* line 1049, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-cart {
+  background-position: -48px -112px;
+}
+
+/* line 1050, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-pencil {
+  background-position: -64px -112px;
+}
+
+/* line 1051, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-clock {
+  background-position: -80px -112px;
+}
+
+/* line 1052, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-disk {
+  background-position: -96px -112px;
+}
+
+/* line 1053, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-calculator {
+  background-position: -112px -112px;
+}
+
+/* line 1054, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-zoomin {
+  background-position: -128px -112px;
+}
+
+/* line 1055, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-zoomout {
+  background-position: -144px -112px;
+}
+
+/* line 1056, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-search {
+  background-position: -160px -112px;
+}
+
+/* line 1057, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-wrench {
+  background-position: -176px -112px;
+}
+
+/* line 1058, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-gear {
+  background-position: -192px -112px;
+}
+
+/* line 1059, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-heart {
+  background-position: -208px -112px;
+}
+
+/* line 1060, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-star {
+  background-position: -224px -112px;
+}
+
+/* line 1061, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-link {
+  background-position: -240px -112px;
+}
+
+/* line 1062, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-cancel {
+  background-position: 0 -128px;
+}
+
+/* line 1063, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-plus {
+  background-position: -16px -128px;
+}
+
+/* line 1064, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-plusthick {
+  background-position: -32px -128px;
+}
+
+/* line 1065, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-minus {
+  background-position: -48px -128px;
+}
+
+/* line 1066, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-minusthick {
+  background-position: -64px -128px;
+}
+
+/* line 1067, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-close {
+  background-position: -80px -128px;
+}
+
+/* line 1068, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-closethick {
+  background-position: -96px -128px;
+}
+
+/* line 1069, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-key {
+  background-position: -112px -128px;
+}
+
+/* line 1070, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-lightbulb {
+  background-position: -128px -128px;
+}
+
+/* line 1071, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-scissors {
+  background-position: -144px -128px;
+}
+
+/* line 1072, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-clipboard {
+  background-position: -160px -128px;
+}
+
+/* line 1073, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-copy {
+  background-position: -176px -128px;
+}
+
+/* line 1074, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-contact {
+  background-position: -192px -128px;
+}
+
+/* line 1075, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-image {
+  background-position: -208px -128px;
+}
+
+/* line 1076, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-video {
+  background-position: -224px -128px;
+}
+
+/* line 1077, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-script {
+  background-position: -240px -128px;
+}
+
+/* line 1078, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-alert {
+  background-position: 0 -144px;
+}
+
+/* line 1079, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-info {
+  background-position: -16px -144px;
+}
+
+/* line 1080, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-notice {
+  background-position: -32px -144px;
+}
+
+/* line 1081, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-help {
+  background-position: -48px -144px;
+}
+
+/* line 1082, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-check {
+  background-position: -64px -144px;
+}
+
+/* line 1083, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-bullet {
+  background-position: -80px -144px;
+}
+
+/* line 1084, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-radio-on {
+  background-position: -96px -144px;
+}
+
+/* line 1085, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-radio-off {
+  background-position: -112px -144px;
+}
+
+/* line 1086, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-pin-w {
+  background-position: -128px -144px;
+}
+
+/* line 1087, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-pin-s {
+  background-position: -144px -144px;
+}
+
+/* line 1088, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-play {
+  background-position: 0 -160px;
+}
+
+/* line 1089, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-pause {
+  background-position: -16px -160px;
+}
+
+/* line 1090, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-seek-next {
+  background-position: -32px -160px;
+}
+
+/* line 1091, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-seek-prev {
+  background-position: -48px -160px;
+}
+
+/* line 1092, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-seek-end {
+  background-position: -64px -160px;
+}
+
+/* line 1093, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-seek-start {
+  background-position: -80px -160px;
+}
+
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+/* line 1095, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-seek-first {
+  background-position: -80px -160px;
+}
+
+/* line 1096, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-stop {
+  background-position: -96px -160px;
+}
+
+/* line 1097, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-eject {
+  background-position: -112px -160px;
+}
+
+/* line 1098, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-volume-off {
+  background-position: -128px -160px;
+}
+
+/* line 1099, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-volume-on {
+  background-position: -144px -160px;
+}
+
+/* line 1100, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-power {
+  background-position: 0 -176px;
+}
+
+/* line 1101, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-signal-diag {
+  background-position: -16px -176px;
+}
+
+/* line 1102, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-signal {
+  background-position: -32px -176px;
+}
+
+/* line 1103, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-battery-0 {
+  background-position: -48px -176px;
+}
+
+/* line 1104, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-battery-1 {
+  background-position: -64px -176px;
+}
+
+/* line 1105, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-battery-2 {
+  background-position: -80px -176px;
+}
+
+/* line 1106, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-battery-3 {
+  background-position: -96px -176px;
+}
+
+/* line 1107, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-plus {
+  background-position: 0 -192px;
+}
+
+/* line 1108, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-minus {
+  background-position: -16px -192px;
+}
+
+/* line 1109, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-close {
+  background-position: -32px -192px;
+}
+
+/* line 1110, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px;
+}
+
+/* line 1111, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px;
+}
+
+/* line 1112, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px;
+}
+
+/* line 1113, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px;
+}
+
+/* line 1114, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px;
+}
+
+/* line 1115, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px;
+}
+
+/* line 1116, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px;
+}
+
+/* line 1117, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px;
+}
+
+/* line 1118, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px;
+}
+
+/* line 1119, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px;
+}
+
+/* line 1120, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circle-check {
+  background-position: -208px -192px;
+}
+
+/* line 1121, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px;
+}
+
+/* line 1122, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px;
+}
+
+/* line 1123, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px;
+}
+
+/* line 1124, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px;
+}
+
+/* line 1125, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px;
+}
+
+/* line 1126, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px;
+}
+
+/* line 1127, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px;
+}
+
+/* line 1128, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px;
+}
+
+/* line 1129, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px;
+}
+
+/* line 1130, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px;
+}
+
+/* line 1131, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px;
+}
+
+/* line 1132, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+/* line 1142, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 0;
+}
+
+/* line 1148, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 0;
+}
+
+/* line 1154, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 0;
+}
+
+/* line 1160, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 0;
+}
+
+/* Overlays */
+/* line 1165, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-overlay {
+  background: #31312f url(../images/jquery-ui/ui-bg_flat_0_31312f_40x100.png) 50% 50% repeat-x;
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+}
+
+/* line 1170, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov.scss */
+.ui-widget-shadow {
+  margin: -8px 0 0 -8px;
+  padding: 5;
+  background: #aaaaaa url(../images/jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  border-radius: 8px;
+}
+
+/* QGov customisations */
+/* line 9, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+input.ui-widget,
+textarea.ui-widget,
+select.ui-widget {
+  background: #fff;
+  color: #000;
+  border-color: #ccc;
+}
+
+/* line 15, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-widget {
+  font-size: 100%;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-helper-hidden-accessible,
+.ui-selectonemenu-label {
+  width: auto;
+}
+
+/* text shadow */
+/* line 27, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  text-shadow: none;
+}
+
+/* buttons (some styles in component-form-button.css) */
+/* line 33, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-button-text-only .ui-button-text {
+  padding: 0;
+}
+
+/* disabled command links */
+/* line 40, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.actions span.ui-state-disabled,
+.actions span.ui-state-disabled:hover,
+.actions span.ui-state-disabled:focus,
+.actions span.ui-state-disabled:active {
+  opacity: .35;
+  background: #585E62;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/* select menus (these have @style setting width:0 !?) */
+/* line 49, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-selectonemenu {
+  padding: 0 .3em;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: rgba(198, 218, 222, 0.5) 0 1px 1.5px;
+  color: #000;
+}
+
+/* line 58, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-hover .ui-selectonemenu-trigger,
+.ui-state-focus .ui-selectonemenu-trigger {
+  background: #E6E6E6;
+  border-color: #E6E6E6;
+}
+
+/* line 62, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+  margin-top: .5em;
+}
+
+/* line 67, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+  border-color: #ccc;
+}
+
+/* line 73, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-selectonemenu.ui-state-focus {
+  border-color: #eab754;
+}
+
+/* checkboxes and radio buttons */
+/* line 79, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-radiobutton-icon,
+.ui-chkbox-icon {
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+
+/* line 88, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-radiobutton .ui-radiobutton-box,
+.ui-chkbox .ui-chkbox-box {
+  background: #fff;
+  border: 1px solid #444;
+}
+
+/* line 93, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-radiobutton .ui-state-hover,
+.ui-chkbox .ui-state-hover {
+  border-color: #3085A2;
+}
+
+/* line 97, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-radiobutton .ui-state-focus,
+.ui-chkbox .ui-state-focus {
+  border-color: #eab754;
+}
+
+/* table layouts for radio buttons and checkboxes */
+/* line 103, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+table.ui-widget tr th,
+table.ui-widget tr td {
+  background: transparent;
+  border: none;
+  padding: .2em .7em .2em 0;
+  vertical-align: baseline;
+}
+
+/* line 109, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+table.ui-widget tbody {
+  background: none;
+}
+
+/* line 113, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+table.ui-selectmanycheckbox label,
+table.ui-selectoneradio label {
+  margin-right: 1.5em;
+}
+
+/* radio buttons in choices list */
+/* line 118, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+ul.choices .ui-radiobutton {
+  margin-left: -20px;
+  padding-right: 4px;
+  /* 16px + 4 = 20px */
+  margin-right: .5em;
+}
+
+/* line 125, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-widget-overlay {
+  background: black;
+  opacity: 0.7;
+}
+
+/* line 133, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-qgov-custom.scss */
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: .5;
+}
+
+/* buttons */
+/* line 9, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+button,
+.button,
+input[type=button],
+input[type=submit],
+input[type=image],
+input[type=reset] {
+  cursor: pointer;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.button,
+.button:link,
+.button:visited,
+.button:active,
+.button:focus,
+.button:hover,
+#asides .button:visited {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* leave image buttons alone */
+/* line 25, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+input[type=image] {
+  padding: 0;
+  max-width: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* actions buttons */
+/* line 41, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button,
+.ui-button,
+.ui-widget .ui-button,
+.actions .button,
+.poll .button,
+.actions input,
+#post-page-options .button {
+  padding: 1em 1.5em;
+  max-width: none;
+  border: 2px groove #6B7175;
+  border-radius: .5em;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+  background: #585E62;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzU4NUU2MiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzM5M0U0MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: none;
+}
+
+/* slimmer buttons in asides */
+/* line 59, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.aside button,
+.aside .button,
+.aside .ui-button,
+.aside .actions input {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+/* interaction states */
+/* line 75, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button:hover,
+form button:focus,
+.ui-button:hover,
+.ui-button:focus,
+.ui-widget .ui-button:hover,
+.ui-widget .ui-button:focus,
+.actions .button:hover,
+.actions .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions input:hover,
+.actions input:focus {
+  background-color: #3b3f41;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 2px;
+}
+
+/* line 85, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button:active,
+.ui-button:active,
+.ui-widget .ui-button:active,
+.actions .button:active,
+.poll .button:active,
+.actions input:active {
+  /* TODO subtle move text down to simulate press */
+  /* subtle text darken */
+  color: #eee;
+  /* reverse gradient */
+  background-color: #393E41;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  /* lighter text shadow */
+  text-shadow: 0 0 1px #444;
+  /* darker, smaller shadow when pressed */
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+}
+
+/* primary action */
+/* line 104, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button,
+strong .ui-button,
+.ui-widget strong .ui-button,
+.actions strong .button,
+.poll .button,
+.actions strong input {
+  text-shadow: 0 0 1px #000;
+  border-color: #98C652;
+  padding-right: 2em;
+  background-color: #5B7D2A;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzZmOWEzMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzU3NzgyOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk1YzQ1MCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY5OTIzMiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  background-size: 1.8em 100%, 100% 100%;
+  background-position: right, right;
+}
+
+/* line 124, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button:hover,
+form strong button:focus,
+strong .ui-button:hover,
+strong .ui-button:focus,
+.ui-widget strong .ui-button:hover,
+.ui-widget strong .ui-button:focus,
+.actions strong .button:hover,
+.actions strong .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions strong input:hover,
+.actions strong input:focus {
+  background-color: #89BC49;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 133, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button:active,
+strong .ui-button:active,
+.ui-widget strong .button:active,
+.actions strong .button:active,
+.poll .button:active,
+.actions strong input:active {
+  /* reverse gradient */
+  background-color: #689132;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* alternate primary action */
+/* line 143, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button,
+em .ui-button,
+.ui-widget em .ui-button,
+.actions em .button,
+.actions em input {
+  text-shadow: 0 0 1px #000;
+  border-color: #3085A2;
+  padding-right: 2em;
+  background-color: #234A68;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIzNGU2YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzEzMzQ0YSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  background-size: 1.8em 100%, 100% 100%;
+  background-position: right, right;
+}
+
+/* line 161, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button:hover,
+form em button:focus,
+em .ui-button:hover,
+em .ui-button:focus,
+.ui-widget em .ui-button:hover,
+.ui-widget em .ui-button:focus,
+.actions em .button:hover,
+.actions em .button:focus,
+.actions em input:hover,
+.actions em input:focus {
+  background-color: #3085A2;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 169, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button:active,
+em .ui-button:active,
+.ui-widget em .ui-button:active,
+.actions em .button:active,
+.actions em input:active {
+  /* reverse gradient */
+  background-color: #234A68;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* disabled buttons */
+/* line 178, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.ui-button[disabled],
+form button[disabled],
+.poll .button[disabled],
+form input[type="submit"][disabled] {
+  opacity: .35;
+  /* based on jquery UI .ui-state-disabled */
+  background: #585E62;
+  border-color: #6B7175;
+  color: #fff;
+  /* 	padding: 1em 1.5em; */
+  text-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* line 191, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+strong .ui-button[disabled],
+.ui-widget strong .ui-button[disabled],
+form strong button[disabled],
+form strong input[type="submit"][disabled] {
+  background: #98C652;
+}
+
+/* line 197, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+em .ui-button[disabled],
+.ui-widget em .ui-button[disabled],
+form em button[disabled],
+form em input[type="submit"][disabled] {
+  background: #234A68;
+}
+
+/* line 204, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#search-button,
+#search-button-primary {
+  background: #fdb728;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* Feedback buttons */
+/* line 214, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button {
+  border-color: #3085A2;
+  border-radius: .3em;
+  font-size: 90%;
+  padding: 0.3em 1.5em;
+  width: 6em;
+  text-align: center;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 225, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button:hover,
+#post-page-options .button:focus {
+  background: #3085A2;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 230, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button:active {
+  /* reverse gradient */
+  background: #234A68;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}

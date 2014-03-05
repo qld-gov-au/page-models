@@ -1,0 +1,3828 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+/* reset */
+/* reset.css - do not disturb - see reset docs */
+/* line 5, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+input, textarea, select {
+  margin: 0;
+}
+
+/* reset block elements */
+/* line 14, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+body {
+  line-height: 1.5;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+dd {
+  margin-left: 2em;
+}
+
+/* line 21, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* Vertical rhythm */
+/* line 26, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+p, ul, ol, dl, blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* reset lists */
+/* line 32, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ul, ol {
+  display: block;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding: 0 0 0 2em;
+}
+
+/* line 39, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+/* line 43, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+li {
+  display: list-item;
+}
+
+/* nested lists have no top/bottom margins */
+/* line 49, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ul ul, ul ol, ul dl,
+ol ul, ol ol, ol dl,
+dl ul, dl ol, dl dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* 2 deep unordered lists use a circle */
+/* line 54, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ol ul, ul ul {
+  list-style-type: circle;
+}
+
+/* 3 deep (or more) unordered lists use a square */
+/* line 59, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ol ol ul, ol ul ul,
+ul ol ul, ul ul ul {
+  list-style-type: square;
+}
+
+/* 2 deep ordered lists use alpha */
+/* line 63, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+/* 3 deep (or more) ordered lists use roman */
+/* line 67, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* reset tables */
+/* line 72, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-indent: 0;
+}
+
+/* line 77, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+caption {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 81, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+td, th {
+  display: table-cell;
+  vertical-align: top;
+  text-align: left;
+  padding: .2em .5em;
+  font-weight: normal;
+  border: 1px solid #000;
+}
+
+/* line 89, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+thead td, thead th {
+  vertical-align: bottom;
+}
+
+/* reset media */
+/* line 94, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+img {
+  border: none;
+}
+
+/* link colours */
+/* line 99, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+a, a:link {
+  color: #000;
+}
+
+/* line 102, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+a:visited {
+  color: #3B4043;
+}
+
+/* line 105, ../../../src/qgov/assets/v2/style/base/_reset.scss */
+a:active {
+  color: #000;
+}
+
+/* hide from visual browsers */
+/* line 12, ../../../src/qgov/assets/v2/style/base/_visually-hidden.scss */
+#access h2,
+#header h2,
+#nav-site h2,
+#breadcrumbs h2,
+#footer h2,
+#feedback-captcha-container,
+#captcha-container,
+.tabbed .heading,
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 23, ../../../src/qgov/assets/v2/style/base/_visually-hidden.scss */
+#header #site-name {
+  clip: none;
+  height: auto;
+  margin: 0;
+  position: static;
+  width: auto;
+}
+
+/* typography */
+/* line 4, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+body, button, input, select, textarea {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+/* line 19, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#access,
+.article,
+#tools,
+#nav-site ul,
+#nav-section,
+#breadcrumbs,
+#asides,
+#document-properties,
+#post-page-options,
+#page-feedback,
+#meta-wrapper,
+#jb-window-content {
+  font-size: 85%;
+}
+
+/* line 23, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#breadcrumbs #tools,
+#content #asides {
+  font-size: 100%;
+}
+
+/* line 26, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#nav-site ul ul {
+  font-size: 100%;
+  /* Stop font-size above from cascading */
+}
+
+/* line 30, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#footer .max-width .box-sizing {
+  font-size: 75%;
+}
+
+/* line 33, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h1, h2, h3, h4, h5, h6, dt, strong, caption, th {
+  font-weight: bold;
+}
+
+/* line 39, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h1 {
+  font-size: 210%;
+  margin: .67em 0 0 0;
+}
+
+/* line 43, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h2 {
+  font-size: 170%;
+  margin: .83em 0;
+}
+
+/* line 47, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h3 {
+  font-size: 140%;
+  margin: 1em 0;
+}
+
+/* line 51, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h4 {
+  font-size: 125%;
+  margin: 1.33em 0;
+}
+
+/* line 55, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h5 {
+  font-size: 110%;
+  margin: 1.5em 0;
+}
+
+/* line 59, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+h6 {
+  font-size: 100%;
+  margin: 1.7em 0;
+}
+
+/* line 63, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#fat-footer h3 {
+  font-size: 180%;
+}
+
+/* line 67, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 71, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+/* line 74, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+i, cite, em, var, dfn {
+  font-style: italic;
+}
+
+/* line 77, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+tt, code, kbd, samp, pre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* line 80, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+pre {
+  display: block;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+/* titles */
+/* line 86, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+}
+
+/* links */
+/* line 91, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+a, a:link, a:visited, a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Navigation links underlined on focus/hover only */
+/* line 106, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#tools a,
+#tools a:link,
+#tools a:visited,
+#nav-site a,
+#nav-site a:link,
+#nav-site a:visited,
+#nav-section a,
+#nav-section a:link,
+#nav-section a:visited,
+#footer a,
+#footer a:link,
+#footer a:visited {
+  text-decoration: none;
+}
+
+/* line 117, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#tools a:hover,
+#tools a:focus,
+#nav-site a:hover,
+#nav-site a:focus,
+#nav-section a:hover,
+#nav-section a:focus,
+#footer a:hover,
+#footer a:focus {
+  text-decoration: underline;
+}
+
+/* small print */
+/* line 122, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* reset fonts for bleeding styles */
+/* line 131, ../../../src/qgov/assets/v2/style/base/_typography.scss */
+#document-properties,
+#post-page-options,
+#asides,
+#nav-section,
+#footer {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/base/_headings.scss */
+h1 {
+  font-weight: normal;
+  letter-spacing: .05em;
+  line-height: 1.1;
+  margin: 0.5em -.4em 0.3em;
+  padding: .5em .4em .3em;
+  clear: left;
+}
+
+/* line 12, ../../../src/qgov/assets/v2/style/base/_headings.scss */
+h2, h3 {
+  color: #444;
+  font-weight: normal;
+}
+
+/* line 17, ../../../src/qgov/assets/v2/style/base/_headings.scss */
+h4, h5, h6 {
+  color: #555;
+}
+
+/* template */
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_init.scss */
+  body {
+    /* text-align: center; */
+    background-color: #fff;
+    color: #444;
+  }
+
+  /* line 11, ../../../src/qgov/assets/v2/style/template/_init.scss */
+  #header,
+  #page-container,
+  #jb-window-content {
+    clear: both;
+    text-align: left;
+  }
+
+  /* max-width for all columns */
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_init.scss */
+  .max-width {
+    max-width: 82em;
+    margin: 0 auto;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+#access {
+  background: #000;
+  color: #fff;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  text-align: left;
+  position: relative;
+  /* appear above #header-bg */
+  list-style-type: none;
+}
+
+/* line 15, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+#access ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+#access li {
+  float: left;
+}
+
+/* line 23, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+#access a {
+  float: left;
+  display: block;
+  color: #fff;
+  padding: .2em .5em;
+  margin: .2em .5em .3em;
+  /* Hidden offscreen till focused */
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+#access a:focus,
+#access.visible a {
+  position: static;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 41, ../../../src/qgov/assets/v2/style/template/_access-links.scss */
+  body #access {
+    margin-bottom: .7em;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* single column (mobile) skin */
+  /* line 6, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header-wrapper {
+    background-color: #017197;
+  }
+
+  /* header */
+  /* line 11, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header {
+    position: relative;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header .max-width {
+    overflow: hidden;
+    background: #D8D8D8;
+    min-height: 0;
+    /*border: 1px solid #000;*/
+  }
+
+  /* line 19, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header a img {
+    border: none;
+  }
+
+  /* line 23, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header-bg {
+    position: absolute;
+    top: -32px;
+    /* #access margin-bottom */
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+  }
+
+  /* line 35, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header a,
+  #header a:link,
+  #header a:visited {
+    color: #000;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header a:hover,
+  #header a.keyboard-focus {
+    background: #ccc;
+  }
+
+  /* line 43, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header .current-area {
+    background: #015677;
+    color: #fff;
+  }
+
+  /* line 50, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header .current-area a,
+  #header .current-area a:link,
+  #header .current-area a:visited,
+  #header .current-area a:hover {
+    color: #fff;
+    padding-bottom: 1.35em;
+    margin-bottom: -.55em;
+    /* Chrome needs .55em, Firefox prefers .6em (adds an extra pixel of height with .55em), weird */
+    background: #535353;
+  }
+}
+@media print {
+  /* line 59, ../../../src/qgov/assets/v2/style/template/_header.scss */
+  #header {
+    margin-bottom: 0.5em;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* screen layout */
+  /* Logo and site name */
+  /* line 8, ../../../src/qgov/assets/v2/style/template/_logo.scss */
+  #qg-coa,
+  #qg-coa a {
+    float: left;
+    clear: left;
+    padding: 8px 42px;
+    margin: 0;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_logo.scss */
+  #qg-coa img {
+    /* width and height in header.html include */
+    display: block;
+    margin: 2px 2px 1px;
+  }
+
+  /* line 19, ../../../src/qgov/assets/v2/style/template/_logo.scss */
+  #qg-coa {
+    line-height: 1;
+  }
+
+  /* Hide print content */
+  /* line 26, ../../../src/qgov/assets/v2/style/template/_logo.scss */
+  .print-link-url,
+  #site-name img.print-version,
+  #qg-coa img.print-version {
+    display: none;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+#tools {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+#tools li {
+  display: block;
+  padding: .2em .5em;
+}
+
+@media screen, projection, tv, handheld {
+  /* Utilities */
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools {
+    overflow: hidden;
+    display: block;
+    background: none;
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools li {
+    margin-top: 5px;
+  }
+
+  /* line 24, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools a {
+    display: block;
+    white-space: nowrap;
+    padding: 0.7em 1em;
+  }
+
+  /* line 30, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools a:link,
+  #tools a:visited {
+    text-decoration: none;
+  }
+
+  /* line 33, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 36, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools form {
+    text-align: left;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools #search-form {
+    padding-left: .5em;
+    padding: .2em 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* line 45, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #search-form div {
+    position: relative;
+    color: #fff;
+    border: 1px solid #c9c9c9;
+  }
+
+  /* line 50, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #search-form div * {
+    line-height: 1.5;
+  }
+
+  /* line 53, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #search-form input {
+    padding: 0;
+    max-width: none;
+  }
+
+  /* line 57, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools .search-wrapper {
+    background: #fff;
+    overflow: hidden;
+    border: 2px #91A97C solid;
+    border-radius: 2px;
+  }
+
+  /* line 63, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #search-form #search-query {
+    padding: .1em .2em;
+    padding-right: 40px;
+    float: left;
+    border: none;
+    border-radius: 0;
+    min-height: 28px;
+    -webkit-appearance: none;
+    width: 100%;
+  }
+
+  /* line 73, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools #search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* line 79, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools label.compact-label {
+    top: .4em;
+  }
+
+  /* line 83, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #tools #search-form input.submit {
+    float: left;
+  }
+
+  /* line 89, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #header .menu {
+    position: absolute;
+    background: transparent;
+    top: .9em;
+    left: 100%;
+    margin-left: -31px;
+  }
+  /* line 97, ../../../src/qgov/assets/v2/style/template/_header-tools.scss */
+  #header .menu:hover {
+    background: transparent;
+  }
+}
+/* NOTE: these selectors must be separate or the entire property block will be ignored
+http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working */
+/* placeholder colour in search fields */
+/* line 10, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+#header ::-moz-placeholder,
+#banner ::-moz-placeholder,
+.search ::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+/* line 16, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+#header ::-webkit-input-placeholder,
+#banner ::-webkit-input-placeholder,
+.search ::-webkit-input-placeholder {
+  color: #666;
+}
+
+/* line 21, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+#header :-ms-input-placeholder,
+#banner :-ms-input-placeholder,
+.search :-ms-input-placeholder {
+  color: #666;
+}
+
+/* line 26, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+#header .placeholdersjs,
+#banner .placeholdersjs,
+.search .placeholdersjs {
+  color: #666;
+}
+
+/* hide placeholder on focus */
+/* line 33, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+#header :focus::-moz-placeholder,
+#banner :focus::-moz-placeholder,
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/pattern/form/_placeholder.scss */
+:focus::-webkit-input-placeholder {
+  direction: ltr;
+  text-indent: -999px;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_nav-site.scss */
+  #header #nav-site {
+    float: left;
+    overflow: hidden;
+    display: none;
+  }
+
+  /* line 9, ../../../src/qgov/assets/v2/style/template/_nav-site.scss */
+  #nav-site {
+    padding: 0;
+    background: none;
+    text-align: left;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_nav-site.scss */
+  #nav-site ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 19, ../../../src/qgov/assets/v2/style/template/_nav-site.scss */
+  #nav-site li {
+    float: left;
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: 0 0 .3em;
+    margin-top: .65em;
+  }
+
+  /* line 27, ../../../src/qgov/assets/v2/style/template/_nav-site.scss */
+  #nav-site a {
+    float: left;
+    white-space: nowrap;
+    padding: 0.7em 1em;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner {
+  background: #017197;
+  padding: 1em 0;
+  overflow: auto;
+}
+/* line 10, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner h2 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 125%;
+  font-weight: bold;
+  left: 0;
+  position: relative;
+  width: auto;
+  float: left;
+  margin: 0;
+}
+/* line 22, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner h2 img {
+  display: block;
+  margin: 0 .85em;
+}
+/* line 29, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner #search-form div {
+  border: none;
+}
+
+/* line 35, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner a:link,
+#banner a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 40, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
+#banner #tools a:hover,
+#banner #tools a:active {
+  background: transparent;
+  text-decoration: underline;
+}
+
+/* line 7, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site {
+  float: none;
+  overflow: visible;
+  /* required so that :before/:after corners are visible; overflow hidden moved to #nav-site ul */
+}
+
+/* line 11, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width {
+  max-width: 84em;
+  /* +2em on header and content*/
+  overflow: visible;
+  /* required so that :before/:after corners are visible; overflow hidden moved to #nav-site ul */
+  /* changed from visible temporarily*/
+  position: relative;
+  z-index: 1;
+  /* so that the :before/:after corners can be hidden when they overlap content */
+}
+
+/* line 19, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width,
+#nav-site .max-width a:link,
+#nav-site .max-width a:visited {
+  /* gradient 2C9EFE, 0055A4 */
+  background: #2c9efe url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzJDOUVGRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwNTVBNCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzU3KSIgLz4KPC9zdmc+);
+  color: #fff;
+}
+
+/* line 25, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site ul {
+  overflow: hidden;
+  /* fix box for styling and layout, contents are floated */
+}
+
+/* line 28, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width:before {
+  border-color: #0B1A25 transparent;
+  border-style: solid;
+  border-width: 1em 0 0 1em;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+}
+
+/* line 37, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width:after {
+  border-color: #0B1A25 transparent;
+  border-style: solid;
+  border-width: 1em 1em 0 0;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1em;
+}
+
+/* line 46, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site + #page-container {
+  background: #eee;
+  margin-top: -1.5em;
+  padding-top: 1.5em;
+}
+
+/* line 52, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site + #page-container > .max-width {
+  /* page container should be above the nav-site corners */
+  z-index: 2;
+  position: relative;
+}
+
+/* line 57, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width li {
+  border-right: 1px solid #0055A4;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* line 64, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width a.active:after,
+#nav-site .max-width li.current-section:after {
+  border: 0.7em solid rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  margin-left: -.7em;
+}
+
+/* line 75, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width a {
+  margin: 0;
+  padding: 1.35em 1.5em 1em;
+}
+
+/* line 80, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
+#nav-site .max-width a:hover,
+#nav-site .max-width a:active {
+  /* reverse gradient */
+  background: #0055a4 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxNzQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMDU1QTQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMyQzlFRkUiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxNzQpIiAvPgo8L3N2Zz4=);
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+#breadcrumbs li {
+  display: block;
+  padding: .2em .5em;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+#breadcrumbs li.last-child {
+  padding: .4em 1em .5em 1em;
+  white-space: nowrap;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+#breadcrumbs a {
+  display: block;
+  white-space: nowrap;
+  padding: .2em .5em .3em;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 20, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs {
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    color: #000;
+    /* background: #015677;*/
+    overflow: hidden;
+    float: right;
+  }
+
+  /* line 28, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs ol {
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  /* line 35, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs ol li.last-child {
+    font-weight: bold;
+    background: none;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs .nav-home a {
+    padding-left: 25px;
+    background: transparent url(../images/skin/icon-home-white.png) center left no-repeat;
+  }
+
+  /* line 45, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs a,
+  #breadcrumbs a:link,
+  #breadcrumbs a:visited {
+    color: #000;
+  }
+
+  /* line 48, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs a:hover {
+    color: #ccc;
+  }
+}
+@media print {
+  /* line 54, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */
+  #breadcrumbs {
+    border: none;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}
+/* shared layout */
+/* line 4, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+.article {
+  clear: both;
+}
+
+/* line 7, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+#content .section {
+  max-width: 52em;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 12, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  #page-container {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaeaea;
+  }
+
+  /* line 18, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  #page-container div .max-width {
+    background: none;
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  #page-container .max-width {
+    overflow: visible;
+  }
+
+  /* line 25, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  #page-container:after,
+  #page-container .max-width:after {
+    /* The following forces these elements to contain the floated elements within without relying on overflow:hidden; */
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    speak: none;
+  }
+
+  /* line 36, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  #content-container {
+    float: right;
+    position: relative;
+    /*box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.1);*/
+    background: #F2F2F2;
+    background: linear-gradient(left, #f2f2f2 67%, #fdfdfd);
+    background: -moz-linear-gradient(left, #f2f2f2 67%, #fdfdfd);
+    background: -webkit-linear-gradient(left, #f2f2f2 67%, #fdfdfd);
+  }
+
+  /* line 46, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  .article {
+    margin: 0;
+    float: left;
+    position: relative;
+  }
+
+  /* line 51, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  .article .box-sizing {
+    overflow: hidden;
+    background: #fff;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /* line 57, ../../../src/qgov/assets/v2/style/template/_page-content.scss */
+  .article .box-sizing .border {
+    background: #fff;
+    padding: 0 1em 1em;
+    overflow: hidden;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert {
+  background: #b90824 url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2NlMGIyZCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2IyMGEyYiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  clear: both;
+  padding: 1em 2em;
+  margin: 0 -1em 0 -2em;
+  color: #FFF;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 18, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert a:hover, .global-alert a:active {
+  text-decoration: underline;
+}
+
+/* line 22, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert h2 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 17px;
+}
+
+/* line 30, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert .header,
+.global-alert .summary {
+  padding: 0;
+}
+
+/* line 33, ../../../src/qgov/assets/v2/style/template/_global-alert.scss */
+.global-alert .header {
+  background: url(../images/skin/icon-global-alert.png) left center no-repeat;
+  padding-left: 50px;
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/template/_asides.scss */
+#asides {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 9, ../../../src/qgov/assets/v2/style/template/_asides.scss */
+  #asides {
+    float: left;
+    position: relative;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_asides.scss */
+  #asides .box-sizing,
+  #asides .box-sizing .border {
+    overflow: hidden;
+  }
+}
+/* document properties */
+/* line 4, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+#document-properties dl {
+  display: block;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+/* line 10, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+#document-properties dt,
+#document-properties dd {
+  font-weight: normal;
+  margin: 0 .5em 0 0;
+  padding: 0;
+  display: inline;
+}
+
+/* line 16, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+dd#document-licence {
+  display: block;
+  float: right;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 22, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #document-properties .box-sizing {
+    padding: 0 1.5em .5em;
+  }
+
+  /* line 25, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #document-properties {
+    clear: both;
+    margin: .7em 0 0;
+  }
+
+  /* line 29, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #meta-wrapper .meta-box-sizing {
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  /* line 34, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #meta-wrapper .meta-box-sizing:after {
+    /* The following forces these elements to contain the floated elements within without relying on overflow:hidden; */
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+    speak: none;
+  }
+
+  /* line 44, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #meta-wrapper {
+    float: left;
+    clear: left;
+    width: 100%;
+  }
+
+  /* line 51, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #meta-wrapper #document-properties,
+  #meta-wrapper #post-page-options,
+  #meta-wrapper #page-feedback {
+    font-size: 100%;
+    width: 100%;
+  }
+
+  /* line 55, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #meta-wrapper .meta-box-sizing .border {
+    background: #fff;
+    overflow: hidden;
+  }
+
+  /* line 59, ../../../src/qgov/assets/v2/style/template/_document-properties.scss */
+  #document-properties .box-sizing {
+    margin: 0;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+#nav-section a .page-number {
+  speak: none;
+  /* These numbers just replicate the list numbers for easy visual styling. They would be redundant to AT */
+  margin: 0 0 .3em -2.85em;
+  float: left;
+  background: #DDECF1;
+  color: #05457F;
+  min-width: 1.5em;
+  text-align: center;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+#nav-section a .page-number {
+  margin-left: -2.4em;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+#nav-section li.current a .page-number {
+  color: #559FB8;
+}
+
+/* line 24, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+#nav-section a[href]:hover .page-number {
+  background: white;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 29, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section {
+    float: left;
+    position: relative;
+    color: #fff;
+  }
+
+  /* line 34, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section .box-sizing {
+    overflow: hidden;
+    padding-right: 0;
+    padding-bottom: .5em;
+  }
+
+  /* line 40, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section h2,
+  #nav-section h3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  /* line 46, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul {
+    list-style-type: none;
+    /*color: #636363;*/
+    padding: 0;
+    margin-top: .5em;
+  }
+
+  /* line 52, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li {
+    /*padding: .25em 0 .25em .5em;*/
+    padding: .1em .7em .2em .5em;
+    margin: 0;
+  }
+
+  /* line 57, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul a {
+    padding: .5em 0 .5em 2.5em;
+    margin: 0;
+    display: block;
+    background: transparent url(../images/skin/bullet-section-nav.png) 0.8em 1.1em no-repeat;
+  }
+
+  /* line 66, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section a,
+  #nav-section a:link,
+  #nav-section a:visited,
+  #nav-section a:active {
+    color: #000;
+  }
+
+  /* line 70, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section .current-page a,
+  #nav-section .current-page a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  /* line 75, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ul {
+    background: #e5e5e5;
+  }
+
+  /* line 78, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ol {
+    list-style-type: none;
+  }
+
+  /* line 84, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ol a,
+  #nav-section ul li.current-page ol a:hover,
+  #nav-section ul li.current-page ol .current a,
+  #nav-section ul li.current-page ol .current a:hover {
+    font-weight: normal;
+    cursor: pointer;
+    background: none;
+  }
+
+  /* line 89, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ol a:hover .link-text {
+    text-decoration: underline;
+  }
+
+  /* line 93, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ol .current a:hover,
+  #nav-section ul li.current-page ol .current a:hover .link-text {
+    text-decoration: none;
+    cursor: default;
+  }
+
+  /* line 98, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page ol .current a,
+  #nav-section ul li.current-page ol .current a:hover {
+    font-weight: bold;
+  }
+
+  /* line 101, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.has-submenu {
+    padding-right: 0 !important;
+    background: none !important;
+  }
+
+  /* line 106, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section .has-submenu a,
+  #nav-section .has-submenu a:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* line 111, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section .has-submenu .future a,
+  #nav-section .has-submenu .future a:hover {
+    cursor: default;
+  }
+
+  /* line 115, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page .current,
+  #nav-section ul li.current-page .current {
+    font-weight: bold;
+    text-decoration: none !important;
+    background: #559FB8;
+    padding-right: 20px !important;
+  }
+
+  /* line 122, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #nav-section ul li.current-page .current a,
+  #nav-section ul li.current-page .current a:hover {
+    background-image: url(../images/skin/bullet-current.png);
+  }
+
+  /* line 125, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
+  #current-page-indicator {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+/* line 3, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#footer li {
+  padding: .2em .5em;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#footer p {
+  margin: 1em 0;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#footer a,
+#fat-footer a {
+  white-space: nowrap;
+  padding: .2em .5em .3em;
+}
+
+/* line 22, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#footer a {
+  display: inline;
+}
+
+/* line 25, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#fat-footer a {
+  display: block;
+  /* override #footer a */
+  margin: 1em 0;
+}
+
+/* line 29, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+#fat-footer h3 a {
+  /* adjustments for 180% font on h3 */
+  margin: .5em 0 .2em;
+  padding-left: .278em;
+  padding-right: .278em;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 38, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer {
+    color: #000;
+    /*background: #B7BDB7;*/
+    position: relative;
+    /* cover up shadow from #meta-wrapper */
+    text-align: center;
+  }
+
+  /* line 44, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer .box-sizing {
+    padding: 1em 1em 5.5em;
+  }
+
+  /* line 47, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer {
+    text-align: left;
+  }
+
+  /* line 50, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer .box-sizing {
+    margin-bottom: 2em;
+    padding: 2em 1em 3.7em;
+    overflow: hidden;
+  }
+
+  /* line 55, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer ul {
+    float: left;
+  }
+
+  /* line 58, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer .section {
+    float: left;
+    padding-top: 0;
+  }
+
+  /* line 62, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer h3 {
+    margin: 0 0 .5em;
+    border-bottom: 1px solid #000;
+  }
+
+  /* line 66, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer li {
+    border-left: 1px solid #000;
+  }
+
+  /* line 69, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer li:first-child {
+    border-left: none;
+  }
+
+  /* line 72, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer li {
+    background: none;
+    padding: 0;
+    border-left: none;
+  }
+
+  /* line 77, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer .max-width a {
+    white-space: normal;
+  }
+
+  /* line 80, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer .box-sizing {
+    background: #D8D8D8;
+  }
+
+  /* line 83, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #languages {
+    width: 20em;
+    text-align: left;
+  }
+
+  /* line 87, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer .box-sizing h3 {
+    clear: both;
+    line-height: 1;
+  }
+
+  /* line 93, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #footer a,
+  #footer a:link,
+  #footer a:visited {
+    color: #000;
+  }
+
+  /* line 98, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer a,
+  #fat-footer a:link,
+  #fat-footer a:visited {
+    color: #000;
+  }
+
+  /* line 103, ../../../src/qgov/assets/v2/style/template/_footer.scss */
+  #fat-footer h3 a,
+  #fat-footer h3 a:link,
+  #fat-footer h3 a:visited {
+    color: #000;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* ResizeEvents Required CSS... */
+  /* line 6, ../../../src/qgov/assets/v2/style/template/_resize-events.scss */
+  .resize-events-watcher {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    clear: both;
+  }
+
+  /* line 14, ../../../src/qgov/assets/v2/style/template/_resize-events.scss */
+  .resize-events-watcher:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/template/_resize-events.scss */
+  * html .resize-events-watcher {
+    zoom: 1;
+  }
+
+  /* line 22, ../../../src/qgov/assets/v2/style/template/_resize-events.scss */
+  *:first-child + html .resize-events-watcher {
+    zoom: 1;
+  }
+}
+@media screen, projection, tv, handheld {
+  /* layout-small - less than 800 small screen single column */
+  /* line 6, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  body.layout-small {
+    text-align: left;
+  }
+
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small .max-width {
+    max-width: none;
+  }
+
+  /* line 16, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #header .box-sizing,
+  #page-container,
+  #fat-footer {
+    padding: 0;
+  }
+
+  /* line 20, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #nav-section {
+    padding-top: 1em;
+  }
+
+  /* line 24, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small #fat-footer {
+    display: none;
+  }
+
+  /* line 28, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small #page-container .tabs li {
+    width: 100%;
+  }
+
+  /* line 32, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small #page-container .tabs li a {
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    width: 100%;
+  }
+
+  /* line 43, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small p,
+  .layout-small ul,
+  .layout-small ol,
+  .layout-small dl,
+  .layout-small blockquote {
+    margin-bottom: 0;
+  }
+
+  /* line 54, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .franchise-index h1,
+  .franchise-index-with-asides h1,
+  .theme-index h1,
+  .theme-index-with-asides h1,
+  .audience-index h1,
+  .topic-index h1,
+  .topic-index-with-asides h1 {
+    background: none;
+    color: #293942;
+    font-weight: bold;
+    font-size: 150%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* line 63, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  body #access {
+    margin-bottom: 0;
+  }
+
+  /* line 67, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #access a {
+    position: absolute;
+  }
+
+  /* line 72, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #page-container .animate {
+    transition: all .3s;
+  }
+
+  /* line 76, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #search-button-toggle img {
+    float: right;
+    margin: 0 .5em;
+  }
+
+  /* line 81, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .article .box-sizing {
+    margin: 0;
+  }
+
+  /* line 84, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #post-page-options ul {
+    margin: 0 1.5em 2em;
+    overflow: hidden;
+  }
+
+  /* line 88, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #nav-section ul li.current-page {
+    background: #D8D8D8;
+    background-image: none;
+    /* No need to point to the right when this column is not on the right */
+  }
+
+  /* line 99, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #breadcrumbs,
+  .article,
+  #asides,
+  #nav-section,
+  #content-container,
+  #document-properties,
+  #post-page-options,
+  #page-feedback {
+    width: 100%;
+  }
+
+  /* line 105, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #nav-section .box-sizing,
+  #asides .box-sizing,
+  .article .box-sizing,
+  #document-properties {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 109, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #asides {
+    overflow: hidden;
+  }
+
+  /* line 112, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #asides .box-sizing {
+    /*background: transparent url(../images/skin/trans-border.png) left top repeat;*/
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /* line 117, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #asides .box-sizing .border {
+    /*margin: 0 5px;*/
+    padding: 0;
+    background: #fff;
+  }
+
+  /* line 122, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #asides .aside {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  /* line 126, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #content #asides .aside {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 130, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #nav-section {
+    padding-top: 1em;
+  }
+
+  /* line 133, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #nav-section .box-sizing {
+    padding-left: .7em;
+    padding-right: .7em;
+  }
+
+  /* line 138, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #fat-footer .section,
+  #fat-footer .section#for-qldrs {
+    width: 12em;
+  }
+
+  /* line 141, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #fat-footer #for-qldrs.section ul {
+    width: 12em;
+  }
+
+  /* line 150, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .franchise-index #related-promotions,
+  .home #related-promotions,
+  .franchise-index-with-asides #related-promotions,
+  .theme-index #related-promotions,
+  .audience-index #related-promotions,
+  .theme-index-with-asides #related-promotions {
+    clear: both;
+    overflow: hidden;
+    padding-top: 0;
+  }
+
+  /* Mobile enhancements */
+  /* line 163, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #fat-footer,
+  .home #services .contents,
+  .home #news .contents,
+  .home #featured .feature img,
+  #footer li,
+  #qg-branding,
+  .feed {
+    display: none;
+  }
+
+  /* line 169, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  #footer .nav-contact,
+  #footer .legal,
+  #footer #link-languages {
+    display: inline-block;
+  }
+
+  /* line 174, ../../../src/qgov/assets/v2/style/template/_layout-small.scss */
+  .layout-small #breadcrumbs ol .last-child,
+  .layout-small li.share {
+    display: none;
+  }
+}
+/* Page options */
+/* line 5, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options {
+  padding-bottom: .5em;
+  overflow: hidden;
+}
+
+/* line 10, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options ul {
+  border-top: 1px solid #d9d9d9;
+  list-style-type: none;
+  padding: .5em 0 0;
+}
+
+/* line 16, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options li {
+  float: left;
+}
+
+/* line 19, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options li.share {
+  float: right;
+}
+
+/* line 23, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options h2 {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* line 28, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options .feedback h2 {
+  margin-bottom: 1.6em;
+}
+
+/* line 32, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options a {
+  padding: 0;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/template/_page-options.scss */
+#post-page-options .share a,
+#post-page-options .share img {
+  float: left;
+}
+
+/* Page feedback */
+/* line 5, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback,
+#page-feedback form {
+  overflow: hidden;
+}
+
+/* line 9, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback form:focus {
+  outline: none;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback h2 {
+  margin: 0;
+}
+
+/* line 16, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback label {
+  display: block;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback .expandable-toggle {
+  margin: -2.2em 1.5em 0;
+  display: block;
+  float: right;
+}
+
+/* line 29, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback a.expandable-toggle,
+#page-feedback a.expandable-toggle:link,
+#page-feedback a.expandable-toggle:visited,
+#page-feedback a.expandable-toggle:active,
+#page-feedback a.expandable-toggle:hover {
+  color: #fff;
+}
+
+/* line 33, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback-privacy {
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 37, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback .expandable-active h3 {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 45, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback-useful {
+  margin-right: .7em;
+}
+
+/* line 49, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-was-useful {
+  padding: 2em 0 1em 10em;
+}
+
+/* line 53, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-feedback-privacy {
+  padding: .5em 1.5em 0;
+}
+
+/* line 57, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#page-was-useful .label {
+  position: absolute;
+  left: 1em;
+  padding-top: .3em;
+}
+
+/* line 63, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#feedback-contact .h3 {
+  margin-left: .77em;
+  /* 1em at 1.3em font-size */
+}
+
+/* Submission */
+/* line 68, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#form-loading {
+  background: transparent url(../images/skin/loading-black-on-lblue.gif) 20px center no-repeat;
+  padding: 1em 0 1em 60px;
+}
+
+/* Response */
+/* line 74, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#feedback-response h2 {
+  margin-bottom: 0.5em;
+}
+
+/* line 77, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#feedback-response-message {
+  clear: both;
+  padding: .5em 1em;
+  overflow: hidden;
+}
+
+/* line 82, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#feedback-response-message p.first-child {
+  padding: 1em 0 1em 70px;
+  margin: .5em 0;
+}
+
+/* line 87, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+.success #feedback-response-message p.first-child {
+  background: transparent url(../images/skin/icon-success.png) 10px center no-repeat;
+}
+
+/* line 90, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+.error #feedback-response-message p.first-child {
+  padding-left: 0;
+}
+
+/* CAPTCHA (Honeypot) field to be visually hidden, but semantically still available */
+/* line 95, ../../../src/qgov/assets/v2/style/template/_page-feedback.scss */
+#captcha-container {
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* Important for keyboard access! */
+/* line 4, ../../../src/qgov/assets/v2/style/base/_keyboard-focus.scss */
+.compact-slideshow-active .controlbar a.keyboard-focus {
+  outline: none;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/base/_keyboard-focus.scss */
+a.keyboard-focus,
+.compact-slideshow-active .controlbar a.keyboard-focus span {
+  outline: 2px solid #eab754;
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+#ia-updates {
+  clear: both;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+#ia-updates .aside-inner,
+#related-promotions .aside-inner {
+  padding: 0 1em 1em;
+}
+
+/* line 11, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+#related-promotions .aside-inner .nn {
+  margin: 0 -1em 1em;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 17, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia h2 {
+    font-size: 100%;
+    margin: 0;
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  .audience-index #ia h2 {
+    font-size: 170%;
+  }
+
+  /* Index presentation */
+  /* line 25, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  .layout-small #ia ul {
+    margin-top: 0;
+  }
+
+  /* line 28, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  /* line 32, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia p {
+    color: #000;
+  }
+
+  /* line 36, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia li.flex-grid-new-row {
+    clear: left !important;
+  }
+
+  /* mobile buttons */
+  /* line 42, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button,
+  #ia a {
+    display: block;
+    padding: 1em;
+    margin: .3em 0;
+    font-size: 100%;
+    text-align: left;
+    text-decoration: none;
+    border: none;
+  }
+
+  /* line 52, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia a {
+    background: #01687F;
+    color: white;
+  }
+  /* line 55, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia a:hover {
+    background: #017197;
+    color: white;
+  }
+  /* line 59, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia a:active {
+    background: #014663;
+    color: white;
+  }
+
+  /* line 64, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button {
+    width: 100%;
+  }
+
+  /* line 67, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button {
+    background: #015677;
+    color: white;
+  }
+  /* line 70, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button:hover {
+    background: #017197;
+    color: white;
+  }
+  /* line 74, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button:active {
+    background: #014663;
+    color: white;
+  }
+  /* line 78, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button.submenu {
+    background: #015677 url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik0wIDBoMTBsLTUgN3oiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjUiLz48L3N2Zz4=') 95% 50% no-repeat;
+  }
+  /* line 80, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button.submenu:hover {
+    background: #017197 url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik0wIDBoMTBsLTUgN3oiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjUiLz48L3N2Zz4=') 95% 50% no-repeat;
+  }
+  /* line 83, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia button.submenu:active {
+    background: #014663 url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxwYXRoIGQ9Ik0wIDBoMTBsLTUgN3oiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjUiLz48L3N2Zz4=') 95% 50% no-repeat;
+  }
+
+  /* line 89, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia ul img {
+    display: none;
+  }
+
+  /* line 93, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia .d1 .snippet {
+    display: block;
+    clear: both;
+    color: black;
+  }
+
+  /* line 99, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia li .snippet a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* line 104, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia li .snippet a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+  }
+
+  /* don't display section headings within tabs */
+  /* line 110, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia-updates .viewport h2 {
+    display: none;
+  }
+
+  /* INDEX PAGES (FRANCHISE and THEME) */
+  /* line 120, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  .article,
+  #document-properties,
+  #post-page-options,
+  #page-feedback,
+  #meta-wrapper,
+  .d1 {
+    width: 100%;
+  }
+
+  /* line 124, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #content .section {
+    max-width: 100%;
+  }
+
+  /* asides within related promotions */
+  /* line 130, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia-updates .aside,
+  #related-promotions .aside {
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  /* line 136, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia-updates .aside-inner,
+  #related-promotions .aside-inner {
+    background: #EFEFEF;
+    background: linear-gradient(top, #fff7f7, #ffffff, #efefef);
+    background: -moz-linear-gradient(top, #fff7f7, white, #efefef);
+    background: -webkit-linear-gradient(top, #fff7f7, white, #efefef);
+    margin: 0 .5em;
+    overflow: hidden;
+  }
+
+  /* line 145, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia-updates .aside img,
+  #related-promotions .aside img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  /* line 152, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  .layout-small #ia #section-about,
+  .layout-small #ia #section-for {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media print {
+  /* line 159, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  #ia .d1 img {
+    float: left;
+  }
+
+  /* line 163, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
+  .compact .section {
+    display: block !important;
+  }
+}
+/**
+ * jquery.butterfly.js
+ * @version 0.9
+ * @see http://irama.org/web/dhtml/butterfly/
+ * @license GNU GENERAL PUBLIC LICENSE (GPL) <http://www.gnu.org/licenses/gpl.html>
+ */
+/* line 10, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-overlay {
+  background: black;
+  opacity: 0.7;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+}
+
+/* line 29, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window-inner {
+  background-color: #fff;
+  color: #444;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  overflow: auto;
+  /*position: relative;*/
+}
+
+/* line 39, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-loading {
+  /* For semantic value, not to be seen */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 49, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window.reactive {
+  background: transparent url(../images/skin/reactive-overlay.png) right top no-repeat;
+}
+
+/* line 54, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window.loading #jb-window-inner {
+  background-image: url(../images/skin/loading-black-on-white.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*.type-fragment #jb-window-content, */
+/* line 60, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+.type-ajax #jb-window-content {
+  padding: 0 1em 1em;
+}
+
+/* line 64, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+.type-media #jb-window-content {
+  padding: 0;
+}
+
+/* line 68, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window-content:focus {
+  outline: none;
+}
+
+/* line 72, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window-content .jb-caption {
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: .5em 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+}
+
+/* line 84, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-close-button img {
+  border: none;
+}
+
+/* line 88, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window.error-no-content #jb-window-content {
+  background: transparent url(../images/skin/icon-warn.png) 15px center no-repeat;
+  padding-left: 70px;
+}
+
+/* Image replacement on gallery controls */
+/* line 95, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-gallery-prev,
+#jb-gallery-next {
+  height: 0;
+  padding-top: 85px;
+  width: 49px;
+  background: transparent url(../images/skin/gallery-controls-sprite.png) left top no-repeat;
+}
+
+/* line 101, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-gallery-next {
+  background-position: -49px top;
+}
+
+/* line 105, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-gallery-prev:hover,
+#jb-gallery-prev:focus {
+  background-position: left -85px;
+}
+
+/* line 109, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-gallery-next:hover,
+#jb-gallery-next:focus {
+  background-position: -49px -85px;
+}
+
+/* line 113, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-gallery-prev.disabled,
+#jb-gallery-next.disabled {
+  background: none;
+  cursor: default;
+}
+
+/* line 118, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+.type-iframe #jb-window-content iframe {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/*sections in butterfly lightbox */
+/* line 125, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+#jb-window .section {
+  margin: 1em 1em 1.5em;
+}
+
+/* line 129, ../../../src/qgov/assets/v2/style/pattern/_butterfly.scss */
+.noscroll {
+  overflow: hidden;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 4, ../../../src/qgov/assets/v2/style/pattern/_skin-loading.scss */
+  .loading {
+    background-image: url("../images/skin/loading-black-on-white.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 24px;
+  }
+}
+/* patterns */
+/* line 4, ../../../src/qgov/assets/v2/style/pattern/_list.scss */
+ul.navbar {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 9, ../../../src/qgov/assets/v2/style/pattern/_list.scss */
+ul.navbar li {
+  display: inline;
+  border-left: 1px solid #444;
+  padding: 0 .3em;
+}
+/* line 14, ../../../src/qgov/assets/v2/style/pattern/_list.scss */
+ul.navbar li:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Table styles */
+/* line 4, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+caption {
+  color: #05457f;
+  /* match h2, h3 */
+  text-align: left;
+  margin-bottom: .2em;
+}
+
+/* line 10, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+table {
+  margin-top: .5em;
+  border-collapse: collapse;
+}
+
+/* line 16, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+th,
+td {
+  padding: .3em 1em;
+  border: none;
+  font-weight: normal;
+}
+
+/* TBODY */
+/* line 33, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+tbody,
+tfoot {
+  background: #EDEDED;
+}
+
+/* THEAD */
+/* line 39, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+thead > tr > th,
+thead > tr > td {
+  background: #2c3a45;
+  color: white;
+}
+
+/* line 46, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+thead > tr > th > a:link,
+thead > tr > td > a:link,
+thead > tr > th > a:visited,
+thead > tr > td > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* TFOOT */
+/* line 57, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+tfoot > tr > th,
+tfoot > tr > td {
+  font-weight: bold;
+}
+
+/* line 61, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+table .number {
+  text-align: right;
+}
+
+/* line 64, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+.spanner {
+  text-align: center;
+}
+
+/* offset */
+/* line 70, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+.even > td,
+.even > th {
+  background-color: #FCFCFC;
+}
+
+/* line 75, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
+.current > td,
+.current > th {
+  background: #bddff0;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 5, ../../../src/qgov/assets/v2/style/pattern/_scrollable.scss */
+  .scrollable {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* line 9, ../../../src/qgov/assets/v2/style/pattern/_scrollable.scss */
+  .scrollable:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: '';
+  }
+
+  /* line 20, ../../../src/qgov/assets/v2/style/pattern/_scrollable.scss */
+  .scrollable > div {
+    overflow-x: auto;
+  }
+}
+/* news */
+/* line 6, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .news h2,
+#asides-primary .news h2,
+#asides-secondary .news h2 {
+  background: transparent url(../images/skin/icon-news.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* beta */
+/* line 14, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .beta h2,
+#asides-primary .beta h2,
+#asides-secondary .beta h2 {
+  padding: .2em 0 .2em 40px;
+}
+
+/* line 17, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .beta {
+  background-image: url(../images/skin/ribbon-beta.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* subscribe */
+/* line 26, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .subscribe h2,
+#asides-primary .subscribe h2,
+#asides-secondary .subscribe h2 {
+  background: transparent url(../images/skin/icon-feed.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* tips */
+/* line 34, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .tip h2,
+#asides-primary .tip h2,
+#asides-secondary .tip h2 {
+  background: transparent url(../images/skin/icon-tip.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* maps */
+/* line 42, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .map h2,
+#asides-primary .map h2,
+#asides-secondary .map h2 {
+  background: transparent url(../images/skin/icon-map.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* sponsors */
+/* line 50, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .sponsors h2,
+#asides-primary .sponsors h2,
+#asides-secondary .sponsors h2 {
+  background: transparent url(../images/skin/icon-stars.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* search */
+/* line 58, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .search h2,
+#asides-primary .search h2,
+#asides-secondary .search h2 {
+  background: transparent url(../images/skin/icon-search.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* your say */
+/* line 66, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .your-say h2,
+#asides-primary .your-say h2,
+#asides-secondary .your-say h2 {
+  background: transparent url(../images/skin/icon-your-say.png) 0 0 no-repeat;
+  padding-left: 40px;
+}
+
+/* login */
+/* line 77, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .login h2,
+#asides-primary .login h2,
+#asides-secondary .login h2,
+#asides .idw h2,
+#asides-primary .idw h2,
+#asides-secondary .idw h2 {
+  background: transparent url(../images/skin/icon-login.png) 0 0 no-repeat;
+  padding-left: 40px;
+}
+
+/* feedback */
+/* line 85, ../../../src/qgov/assets/v2/style/pattern/aside/_headings.scss */
+#asides .feedback h2,
+#asides-primary .feedback h2,
+#asides-secondary .feedback h2 {
+  background: transparent url(../images/skin/icon-feedback.png) 0 0 no-repeat;
+  padding: .2em 0 .2em 40px;
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.status {
+  margin: .5em 0;
+  padding: .5em .5em .5em 66px;
+  background: #EEF4F6;
+  background-position: 18px 1em;
+  background-repeat: no-repeat;
+  border: 1px solid #74AFE2;
+}
+
+/* status in butterfly lightbox */
+/* line 13, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+#jb-window .status {
+  margin: 0;
+}
+
+/* line 20, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.status,
+.status h2,
+.warn :link,
+.warn :visited {
+  color: #333;
+}
+
+/* line 24, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.status h2 {
+  margin-top: .5em;
+}
+
+/* line 28, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.info {
+  background-color: #EEF4F6;
+  background-image: url(../images/skin/icon-info.png);
+  border-color: #74AFE2;
+}
+
+/* line 33, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.success-step {
+  background-color: #EEF4F6;
+  background-image: url(../images/skin/icon-success.png);
+  border-color: #74AFE2;
+}
+
+/* line 38, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.success {
+  background-color: #F2F7EA;
+  background-image: url(../images/skin/icon-success.png);
+  border-color: #AECF80;
+}
+
+/* line 43, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.warn {
+  background-color: #FFFBE6;
+  background-image: url(../images/skin/icon-warn.png);
+  border-color: #FFE7AC;
+}
+
+/* line 48, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+.fail {
+  background-color: #FEE6E8;
+  background-image: url(../images/skin/icon-fail.png);
+  border-color: #EB6E78;
+}
+
+/* line 54, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
+div.download {
+  background-color: #EEF4F6;
+  background-image: url(../images/skin/icon-download.png);
+  border-color: #74AFE2;
+}
+
+/* styling input widgets */
+/* line 17, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+form button,
+.button,
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=time],
+input[type=datetime],
+input[type=number],
+select,
+textarea {
+  padding: .3em;
+  max-width: 90%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: rgba(198, 218, 222, 0.5) 0 1px 1.5px;
+}
+
+/* separate the :not() selector or the whole block is ignored in older browsers */
+/* line 26, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+input:not([type]) {
+  font: inherit;
+  padding: .3em;
+  max-width: 90%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: rgba(198, 218, 222, 0.5) 0 1px 1.5px;
+}
+
+/* line 38, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.search input {
+  border-radius: 0;
+  box-shadow: none;
+  float: left;
+  padding: .45em;
+}
+/* line 44, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.search input[type="search"] {
+  -webkit-appearance: none;
+}
+/* line 47, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.search .search-button {
+  float: none;
+}
+/* line 50, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.search .section {
+  border-bottom: 0;
+}
+/* line 53, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.search .all {
+  display: block;
+}
+
+/* line 60, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+textarea {
+  width: 90%;
+  max-width: 50em;
+  overflow: auto;
+}
+
+/* line 65, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+select {
+  overflow: hidden;
+}
+
+/* line 69, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+textarea.large-compact {
+  height: 4.5em;
+  transition: height .3s ease-out;
+}
+/* line 73, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+textarea.large-compact:focus {
+  height: 25em;
+}
+
+/* numbers */
+/* line 79, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.number td {
+  text-align: right;
+}
+
+/* disabled items */
+/* line 85, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.placeholder,
+.disabled {
+  color: #777;
+}
+
+/* line 90, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+input[disabled],
+select[disabled],
+textarea[disabled] {
+  background: transparent;
+  color: #777;
+}
+
+/* line 96, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  color: #777;
+}
+
+/* a form is a list of questions */
+/* line 102, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 107, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions li {
+  clear: left;
+  position: relative;
+  padding: .5em 0 .7em 1em;
+  /* padding-bottom +.3em to balance padding-top (accounting for line-height on text) */
+  list-style: none;
+}
+
+/* form footer */
+/* line 116, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions li.footer {
+  padding-bottom: .5em;
+}
+
+/* line 119, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.sections li.footer {
+  padding: .5em;
+}
+
+/* form actions */
+/* line 125, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.actions, #asides .actions {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: .5em 0 0;
+  overflow: hidden;
+}
+
+/* line 133, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.actions li,
+.questions .actions li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1em .5em 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* line 141, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.actions input {
+  max-width: none;
+}
+
+/* link actions */
+/* line 146, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.actions :link,
+.actions :visited {
+  color: #444;
+}
+
+/* question states */
+/* line 152, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.invalid .alert {
+  color: #AD0720;
+}
+
+/* line 158, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.invalid > button,
+.invalid > input,
+.invalid > select,
+.invalid > textarea {
+  border-color: #E5A5AD;
+  color: #AD0720;
+  font-weight: normal;
+}
+
+/* focus */
+/* line 167, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+button.focus,
+input.focus,
+select.focus,
+textarea.focus {
+  border-color: #eab754;
+}
+
+/* line 171, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+  box-shadow: 0 0 0 1px #eab754;
+}
+
+/* line 174, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions li.active {
+  background: #FFFBE6;
+  background: linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
+  background: -moz-linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
+  background: -webkit-linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
+}
+
+/* don't highlight sections */
+/* line 181, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions li.section {
+  background: transparent;
+}
+
+/* Forms */
+/* line 187, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.form {
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  padding: .5em;
+}
+
+/* line 192, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.form .status {
+  margin: .5em 0;
+}
+
+/* line 195, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.form .status h2 {
+  margin: .5em 0 .83em;
+  padding: 0;
+  color: #333;
+  background: transparent;
+  border: none;
+}
+
+/* form sections */
+/* line 205, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+form .sections {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 210, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+li.section {
+  border-bottom: 1px solid #dbdbdb;
+  margin: .5em 0;
+  padding: .5em 0;
+}
+
+/* line 215, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+li.section li.section {
+  border-bottom: none;
+  margin: .5em 0 0;
+  padding: .5em 0 0;
+}
+
+/* line 221, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+legend .h2,
+legend .h3 {
+  display: block;
+  color: #05457f;
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  /*margin: .83em 0;*/
+}
+
+/* line 229, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+legend .h3 {
+  font-size: 130%;
+  /*margin: 1em 0;*/
+}
+
+/* instructions */
+/* line 235, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.instructions p {
+  margin-top: 0;
+}
+
+/* group controls */
+/* line 240, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions > li.compact {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+/* line 245, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions > li.group {
+  padding-bottom: 0;
+  overflow: hidden;
+  /* to contain floated children */
+}
+
+/* line 250, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.group > .questions > li,
+.group > fieldset > .questions > li {
+  margin: 0 0 -1px -1em;
+  background: transparent;
+}
+
+/* group labels */
+/* line 255, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.group .questions .label {
+  font-size: 80%;
+}
+
+/* compact question layout */
+/* line 259, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.group > fieldset .compact li {
+  float: left;
+  clear: none;
+  margin-right: 1.5em;
+}
+
+/* prevent floated selects from truncating at 90% max-width */
+/* line 265, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.group select {
+  max-width: 100%;
+}
+
+/* https://github.com/h5bp/html5-boilerplate/wiki/css */
+/* line 271, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+fieldset {
+  border: none;
+}
+
+/* line 274, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+legend {
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+  width: 100%;
+  border: 0;
+  color: inherit;
+}
+
+/* labels and alerts */
+/* line 283, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 290, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.label,
+.hint,
+label .help,
+legend .help,
+.alert {
+  display: block;
+}
+
+/* help inside a hint inline */
+/* line 295, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+label .hint .help,
+legend .hint .help {
+  display: inline;
+}
+
+/* required fields */
+/* line 301, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+abbr[title*="required"] {
+  color: red;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* line 306, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions abbr[title*="required"] {
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  text-align: center;
+  top: .5em;
+}
+
+/* line 313, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+abbr.required {
+  color: red;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+/* line 318, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions abbr.required {
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  text-align: center;
+  top: .5em;
+}
+
+/* radio buttons and checkboxes are choices */
+/* line 329, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.choices,
+#asides .choices {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 335, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions .choices li {
+  padding: 0 0 0 20px;
+  margin: .3em 0;
+  background: transparent;
+  list-style: none;
+  border: none;
+}
+
+/* line 342, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.choices li input {
+  position: absolute;
+  margin-left: -20px;
+  padding: 0;
+  /* IE8 needs this to remove earlier padding */
+  top: .3em;
+  /* helps Chrome, Firefox and Opera */
+}
+
+/* compact options layout */
+/* line 349, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.questions .compact > li {
+  float: left;
+  clear: none;
+  margin-right: 1.5em;
+}
+
+/* checked radio buttons/checkboxes */
+/* line 355, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+input:checked + label {
+  font-weight: bold;
+}
+
+/* line 358, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.choices label {
+  position: relative;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+/* data display */
+/* line 366, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.data dt {
+  font-weight: normal;
+  margin: 1em 0 .3em;
+}
+
+/* line 370, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.data dd {
+  border: 1px solid #dbdbdb;
+  background: #f9f9f9;
+  margin: 0 0 1em;
+  position: relative;
+  padding: .5em .5em .7em;
+  /* padding-bottom +.3em to balance padding-top (accounting for line-height on text) */
+  min-height: 1em;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* line 380, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.tba dd {
+  background: transparent;
+  color: #777;
+}
+
+/* line 384, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.data dd a {
+  color: #444;
+  text-decoration: none;
+}
+
+/* line 389, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.data dd a:active,
+.data dd a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* data to copy and paste */
+/* line 394, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.copypaste {
+  font-weight: normal;
+  font-size: 180%;
+}
+
+/* edit links */
+/* line 400, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.edit {
+  text-align: right;
+  margin: .5em 0;
+}
+
+/**
+ * Basic functionality styles for "Compact Form Labels"
+ * These styles assume that each form input/label pair are surrounded by a div with a class form-element.
+ * These styles need to be customised for the forms markup you are using.
+ */
+/* line 412, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+.form-element,
+#tools #search-form {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 416, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+#search-form label.compact-label {
+  cursor: text;
+}
+
+/* line 419, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+label.compact-label {
+  position: absolute;
+  top: .15em;
+  left: .5em;
+  z-index: 1;
+  color: #666;
+}
+
+/* printing forms */
+@media print {
+  /* line 433, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
+  .actions button,
+  .actions .button,
+  .actions input,
+  .actions a {
+    display: none;
+  }
+}
+/* buttons */
+/* line 9, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+button,
+.button,
+input[type=button],
+input[type=submit],
+input[type=image],
+input[type=reset] {
+  cursor: pointer;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.button,
+.button:link,
+.button:visited,
+.button:active,
+.button:focus,
+.button:hover,
+#asides .button:visited {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* leave image buttons alone */
+/* line 25, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+input[type=image] {
+  padding: 0;
+  max-width: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* actions buttons */
+/* line 41, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button,
+.ui-button,
+.ui-widget .ui-button,
+.actions .button,
+.poll .button,
+.actions input,
+#post-page-options .button {
+  padding: 1em 1.5em;
+  max-width: none;
+  /*border: 2px groove #6B7175;
+  border-radius: .5em;*/
+  font-weight: bold;
+  font-style: normal;
+  color: #fff;
+  background: #535353;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzU4NUU2MiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzM5M0U0MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: none;
+}
+
+/* slimmer buttons in asides */
+/* line 59, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.aside button,
+.aside .button,
+.aside .ui-button,
+.aside .actions input {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+/* interaction states */
+/* line 75, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button:hover,
+form button:focus,
+.ui-button:hover,
+.ui-button:focus,
+.ui-widget .ui-button:hover,
+.ui-widget .ui-button:focus,
+.actions .button:hover,
+.actions .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions input:hover,
+.actions input:focus {
+  background-color: #3b3f41;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 2px;
+}
+
+/* line 85, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form button:active,
+.ui-button:active,
+.ui-widget .ui-button:active,
+.actions .button:active,
+.poll .button:active,
+.actions input:active {
+  /* TODO subtle move text down to simulate press */
+  /* subtle text darken */
+  color: #eee;
+  /* reverse gradient */
+  background-color: #393E41;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+  /* lighter text shadow */
+  text-shadow: 0 0 1px #444;
+  /* darker, smaller shadow when pressed */
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
+}
+
+/* primary action */
+/* line 104, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button,
+strong .ui-button,
+.ui-widget strong .ui-button,
+.actions strong .button,
+.poll .button,
+.actions strong input {
+  text-shadow: 0 0 1px #000;
+  border-color: #98C652;
+  padding-right: 2em;
+  background-color: #5B7D2A;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzZmOWEzMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzU3NzgyOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk1YzQ1MCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY5OTIzMiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+  background-size: 1.8em 100%, 100% 100%;
+  background-position: right, right;
+}
+
+/* line 124, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button:hover,
+form strong button:focus,
+strong .ui-button:hover,
+strong .ui-button:focus,
+.ui-widget strong .ui-button:hover,
+.ui-widget strong .ui-button:focus,
+.actions strong .button:hover,
+.actions strong .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions strong input:hover,
+.actions strong input:focus {
+  background-color: #89BC49;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 133, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form strong button:active,
+strong .ui-button:active,
+.ui-widget strong .button:active,
+.actions strong .button:active,
+.poll .button:active,
+.actions strong input:active {
+  /* reverse gradient */
+  background-color: #689132;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* alternate primary action */
+/* line 143, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button,
+em .ui-button,
+.ui-widget em .ui-button,
+.actions em .button,
+.actions em input {
+  text-shadow: 0 0 1px #000;
+  border-color: #3085A2;
+  padding-right: 2em;
+  background-color: #234A68;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIzNGU2YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzEzMzQ0YSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  background-size: 1.8em 100%, 100% 100%;
+  background-position: right, right;
+}
+
+/* line 161, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button:hover,
+form em button:focus,
+em .ui-button:hover,
+em .ui-button:focus,
+.ui-widget em .ui-button:hover,
+.ui-widget em .ui-button:focus,
+.actions em .button:hover,
+.actions em .button:focus,
+.actions em input:hover,
+.actions em input:focus {
+  background-color: #3085A2;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* line 169, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+form em button:active,
+em .ui-button:active,
+.ui-widget em .ui-button:active,
+.actions em .button:active,
+.actions em input:active {
+  /* reverse gradient */
+  background-color: #234A68;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+}
+
+/* disabled buttons */
+/* line 178, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+.ui-button[disabled],
+form button[disabled],
+.poll .button[disabled],
+form input[type="submit"][disabled] {
+  opacity: .35;
+  /* based on jquery UI .ui-state-disabled */
+  background: #585E62;
+  border-color: #6B7175;
+  color: #fff;
+  /* 	padding: 1em 1.5em; */
+  text-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* line 191, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+strong .ui-button[disabled],
+.ui-widget strong .ui-button[disabled],
+form strong button[disabled],
+form strong input[type="submit"][disabled] {
+  background: #98C652;
+}
+
+/* line 197, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+em .ui-button[disabled],
+.ui-widget em .ui-button[disabled],
+form em button[disabled],
+form em input[type="submit"][disabled] {
+  background: #234A68;
+}
+
+/* line 204, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#search-button,
+#search-button-primary {
+  background: #464B4F;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* Feedback buttons */
+/* line 214, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button {
+  border-color: #cdcdcd;
+  /*border-radius: .3em;*/
+  font-size: 90%;
+  padding: 0.3em 1.5em;
+  width: 6em;
+  text-align: center;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+}
+
+/* line 225, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button:hover,
+#post-page-options .button:focus {
+  background: #929292;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+}
+
+/* line 230, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
+#post-page-options .button:active {
+  /* reverse gradient */
+  background: #777777;
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+}
+
+/* Contact blocks */
+/* line 5, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.contact dl {
+  display: block;
+  position: relative;
+  margin: .5em 0 .5em 8em;
+}
+/* line 11, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.contact dl dt,
+.contact dl dd {
+  margin: 0;
+  padding: 0;
+}
+/* line 15, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.contact dl dd {
+  padding: 0 0 .75em;
+}
+/* line 18, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.contact dl dt {
+  position: absolute;
+  left: -8em;
+  width: 7em;
+  font-weight: normal;
+}
+
+/* line 27, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.tel {
+  white-space: nowrap;
+}
+
+/* line 32, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.adr .type,
+.tel .type {
+  display: none;
+}
+
+/* click to chat */
+/* line 38, ../../../src/qgov/assets/v2/style/pattern/_contact.scss */
+.click-to-chat {
+  clear: both;
+}
+
+/* URLs need some help with word wrap */
+/* line 4, ../../../src/qgov/assets/v2/style/pattern/_url.scss */
+.url {
+  word-wrap: break-word;
+  display: block;
+}
+
+/* line 3, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabbed .viewport {
+  background: #efedee;
+  overflow: hidden;
+  clear: both;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabbed .section .content {
+  overflow: hidden;
+  padding: .7em;
+}
+
+/* line 12, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 17, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabs li {
+  float: left;
+  display: block;
+}
+
+/* line 23, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.narrow .tabs {
+  overflow: auto;
+}
+/* line 26, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.narrow .tabs li {
+  height: 0;
+  overflow: hidden;
+}
+/* line 31, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.narrow .tabs .show,
+.narrow .tabs .current {
+  height: 2.5em;
+  transition: height .3s;
+}
+/* line 35, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.narrow .tabs .narrow {
+  display: block;
+  height: 2.5em;
+}
+/* line 39, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.narrow .tabs .narrow.show {
+  display: none;
+}
+
+/* line 44, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabs li a {
+  background-color: #2c3a43;
+  color: #fff;
+  padding: .5em 1.5em;
+  text-decoration: none;
+  margin-right: .2em;
+  float: left;
+}
+
+/* line 52, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabs .current a {
+  background-color: #efedee;
+  color: #2c3a43;
+}
+
+/* line 58, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+.tabbed table {
+  width: 100%;
+}
+
+/* line 63, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+#red-tab-button {
+  border-top: 5px solid #D80000;
+}
+
+/* line 67, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+#amber-tab-button {
+  border-top: 5px solid #FFB400;
+}
+
+/* line 71, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
+#green-tab-button {
+  border-top: 5px solid #007C00;
+}
+
+@media print {
+  /* line 4, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  /* Some landmark headings should be visible */
+  /* line 10, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #breadcrumbs h2 {
+    position: static;
+  }
+
+  /* Hide sections that are not to print */
+  /* line 23, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #access,
+  #browser,
+  #tools,
+  #nav-site,
+  #nav-section,
+  #fat-footer,
+  .page-options,
+  #header-bg,
+  #footer li {
+    display: none;
+  }
+
+  /* Swap in print logo and site name */
+  /* line 28, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #qg-coa img {
+    display: none;
+  }
+
+  /* line 31, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #qg-coa {
+    display: block;
+    text-align: right;
+    padding-bottom: 11mm;
+  }
+
+  /* line 37, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #site-name img.print-version,
+  #qg-coa img.print-version {
+    display: block;
+    height: 27mm;
+    margin-left: 155mm;
+  }
+
+  /* Show legal information */
+  /* line 44, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #footer li.legal {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 49, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #footer a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Print link URLs */
+  /* line 56, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  .print-link-url {
+    display: inline;
+    text-decoration: none;
+    font-size: 100%;
+    color: #06c;
+  }
+
+  /* ignore in warning status blocks and actions */
+  /* line 64, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  .actions .print-link-url,
+  .warn .print-link-url {
+    display: none;
+  }
+
+  /* Style breadcrumbs */
+  /* line 69, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #breadcrumbs h2 {
+    font-size: 100%;
+    display: block;
+    margin: .5em 0;
+    font-weight: normal;
+  }
+
+  /* line 78, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #breadcrumbs ol,
+  #breadcrumbs li,
+  #breadcrumbs li.last-child,
+  #breadcrumbs a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 85, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #breadcrumbs a {
+    padding-right: .5em;
+  }
+
+  /* line 88, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #breadcrumbs a:after {
+    content: " >";
+  }
+
+  /* A few simple lines */
+  /* line 93, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #header {
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+  }
+
+  /* line 97, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #footer {
+    border-top: 1px solid #000;
+    padding-top: 1em;
+  }
+
+  /* hide the tagline when printing */
+  /* line 103, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #qg-branding {
+    display: none;
+  }
+
+  /* line 116, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #page-container,
+  #content-container,
+  .article,
+  #document-properties,
+  #post-page-options,
+  #page-feedback,
+  #content .section,
+  #content,
+  .section,
+  .max-width {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* line 123, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  .print-link-url,
+  #site-name img.print-version,
+  #qg-coa img.print-version {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: inline;
+  }
+
+  /* line 130, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  #ia .d1 img {
+    float: left;
+  }
+
+  /* line 134, ../../../src/qgov/assets/v2/style/template/_print.scss */
+  .compact .section {
+    display: block !important;
+  }
+}
+/* line 1, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+#smartbanner {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 78px;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.35);
+}
+
+/* line 14, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-container {
+  margin: 0 auto;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-close {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  display: block;
+  font-family: 'ArialRoundedMTBold',Arial;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 14px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border: 0;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  color: #b1b1b3;
+  background: #efefef;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-close:active, .smartbanner-close:hover {
+  color: #333;
+}
+
+/* line 40, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+a:link.smartbanner-close, a:visited.smartbanner-close {
+  text-decoration: none;
+  color: #333;
+}
+
+/* line 45, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-icon {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  display: block;
+  width: 57px;
+  height: 57px;
+  background-color: #fff;
+  background-size: cover;
+}
+
+/* line 56, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-info {
+  position: absolute;
+  left: 98px;
+  top: 15px;
+  width: 44%;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #999;
+}
+
+/* line 67, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-title {
+  font-size: 15px;
+  line-height: 17px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* line 74, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-button {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  min-width: 12%;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 88, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+.smartbanner-button-text {
+  text-align: center;
+  display: block;
+  padding: 0 5px;
+}
+
+/* line 94, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+a:link.smartbanner-button, a:visited.smartbanner-button {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 99, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+#smartbanner .aside {
+  border: 0;
+}
+
+/* line 103, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
+#smartbanner .aside a:visited {
+  color: #fff;
+}

@@ -1,0 +1,409 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+/* page models */
+/* large application */
+/* line 4, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.large-application h1 {
+  font-size: 150%;
+}
+
+/* line 8, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#large-application {
+  position: relative;
+  margin: 0 -1em;
+  background: #B4D1FF;
+}
+
+/* large application */
+/* line 20, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools,
+#app-viewport-info {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
+}
+
+/* line 26, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools {
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+
+/* line 31, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools select {
+  width: 80%;
+}
+
+/* line 35, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-info {
+  right: 0;
+  z-index: 4;
+  background: #F7FBFF;
+  overflow-y: scroll;
+}
+
+/* line 43, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-overlay {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+}
+
+/* line 57, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-tools #app-viewport-overlay,
+.viewport-info #app-viewport-overlay,
+.viewport-tools-info #app-viewport-overlay {
+  visibility: visible;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+/* line 66, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-tools #app-viewport-tools,
+.viewport-tools-info #app-viewport-tools {
+  margin-left: 0;
+}
+
+/* line 71, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#large-application.viewport-info #app-viewport-info,
+#large-application.viewport-tools-info #app-viewport-info {
+  margin-right: 0;
+}
+
+/* line 76, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools {
+  margin-left: -90%;
+}
+
+/* line 81, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info {
+  margin-right: -90%;
+}
+
+/* line 88, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-tools #app-viewport-tools,
+.viewport-tools-info #app-viewport-tools,
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools,
+#app-viewport-tools {
+  transition: margin-left 0.3s;
+}
+
+/* line 95, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-info #app-viewport-info,
+.viewport-tools-info #app-viewport-info,
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info
+#app-viewport-info {
+  transition: margin-right 0.3s;
+}
+
+/* https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode#Presentation_differences */
+/* line 100, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+-webkit-full-screen #large-application {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 105, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-info h2 {
+  padding: 0 .5em;
+}
+
+/* line 111, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools #app-viewport-tools-results,
+#app-viewport-info p,
+#app-viewport-info .section {
+  padding: 0 1em;
+}
+
+/* line 114, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-info .section p {
+  padding: 0;
+}
+
+/* line 122, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools form {
+  max-height: 100%;
+  transition: max-height 0.3s;
+}
+/* line 127, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools form .search {
+  position: relative;
+  left: 0;
+  margin: 0;
+  width: auto;
+  transition: left 0.3s, margin 0.3s;
+}
+/* line 135, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools form .viewport {
+  background: rgba(255, 255, 255, 0.85);
+  left: 100%;
+  margin: 1em 1em 1em 45px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  max-width: none;
+  padding: 1em 35px 1em 1em;
+}
+/* line 148, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools.search-results form {
+  max-height: 0;
+  overflow: hidden;
+}
+/* line 153, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools.search-results #app-viewport-tools-results {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 160, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.section legend {
+  margin-left: 1em;
+}
+
+/* line 164, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-tools li.section {
+  border-bottom: 0;
+  margin: 0;
+}
+
+/* line 171, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble {
+  display: block;
+  background-color: rgba(244, 255, 217, 0.85);
+  border-radius: 4px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  padding: 0 20px 15px 20px;
+  position: absolute;
+  right: 1.5em;
+  margin-left: 80%;
+  width: 220px;
+  z-index: 2;
+}
+/* line 183, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble h2 {
+  margin: .5em 0;
+}
+/* line 186, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble p {
+  margin: 0;
+}
+/* line 190, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble .close {
+  background: transparent url("../images/skin/close-x.png") center center no-repeat;
+  width: 13px;
+  height: 13px;
+  display: block;
+  z-index: 10;
+  float: right;
+  margin-top: 15px;
+  cursor: pointer;
+}
+/* line 201, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble .close:hover {
+  background: transparent url("../images/skin/close-x-hover.png") center center no-repeat;
+}
+
+/* line 207, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-controls {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  margin: 1.5em;
+  font-family: Roboto, Arial, sans-serif;
+}
+/* line 215, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-controls li {
+  display: inline-block;
+}
+/* line 220, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-controls a {
+  display: block;
+  background: #fff;
+  color: #565656;
+  font-size: 11px;
+  text-align: center;
+  border: 1px solid #7E92B3;
+  padding: 1px 6px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 230, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+#app-viewport-controls a:hover {
+  background: #EBEBEB;
+  color: #000;
+}
+
+/* line 240, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble.about {
+  top: 220px;
+}
+
+/* line 244, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.viewport-bubble.key {
+  top: 60px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 249, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+.tell-us {
+  top: 5px;
+  right: 221px;
+  width: 50px;
+}
+
+@media print {
+  /* line 260, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+  #app-viewport-tools,
+  .viewport-bubble,
+  #app-viewport-overlay,
+  #app-viewport-tools .viewport,
+  #app-viewport-controls {
+    display: none;
+    background: none;
+  }
+
+  /* line 264, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+  div#large-application.viewport-info {
+    width: 100%;
+    height: inherit !important;
+    margin: 0;
+    background: #fff;
+  }
+
+  /* line 270, ../../../src/qgov/assets/v2/style/page-model/_large-application.scss */
+  #app-viewport-info {
+    position: relative;
+    width: 100% !important;
+    background: none;
+    clear: both;
+    margin: 0;
+    overflow: hidden !important;
+  }
+}
+@media only all and (min-width: 980px) {
+  /* line 6, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-tools,
+  #app-viewport-info {
+    width: 25%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  /* line 11, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-tools {
+    left: 0;
+    z-index: 1002;
+  }
+
+  /* line 15, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-info {
+    right: 0;
+    z-index: 1001;
+    overflow-y: scroll;
+  }
+
+  /* line 21, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-tools input[type=search] {
+    max-width: 80%;
+  }
+
+  /* line 25, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-overlay {
+    background: #fff;
+  }
+
+  /* line 31, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  .viewport-tools #app-viewport-overlay,
+  .viewport-info #app-viewport-overlay,
+  .viewport-tools-info #app-viewport-overlay {
+    opacity: 0.3;
+  }
+
+  /* line 37, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  .viewport #app-viewport-tools,
+  .viewport-info #app-viewport-tools {
+    margin-left: -25%;
+  }
+
+  /* line 42, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  .viewport #app-viewport-info,
+  .viewport-tools #app-viewport-info {
+    margin-right: -25%;
+  }
+
+  /* line 47, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-tools form .viewport {
+    width: 21em;
+  }
+  /* line 49, ../../../src/qgov/assets/v2/style/page-model/_large-application-large.scss */
+  #app-viewport-tools form .viewport #query {
+    width: 20em;
+  }
+}
+@media only all and (min-width: 640px) and (max-width: 980px) {
+  /* line 5, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  #app-viewport-tools,
+  #app-viewport-info {
+    width: 30%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  /* line 11, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  #app-viewport-overlay {
+    background: #fff;
+  }
+
+  /* line 15, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  #app-viewport-tools input[type=search] {
+    max-width: 80%;
+  }
+
+  /* line 19, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  .questions li {
+    padding-top: 0.5em;
+    padding-right: 0;
+    padding-bottom: 0.1em;
+  }
+
+  /* line 28, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  .viewport-tools #app-viewport-overlay,
+  .viewport-info #app-viewport-overlay,
+  .viewport-tools-info #app-viewport-overlay {
+    opacity: 0.3;
+  }
+
+  /* line 34, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  .viewport #app-viewport-tools,
+  .viewport-info #app-viewport-tools {
+    margin-left: -30%;
+  }
+
+  /* line 39, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  .viewport #app-viewport-info,
+  .viewport-tools #app-viewport-info {
+    margin-right: -30%;
+  }
+
+  /* line 45, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  #app-viewport-tools .viewport {
+    margin-left: 90px;
+    width: 21em;
+  }
+  /* line 48, ../../../src/qgov/assets/v2/style/page-model/_large-application-medium.scss */
+  #app-viewport-tools .viewport #query {
+    width: 20em;
+  }
+}

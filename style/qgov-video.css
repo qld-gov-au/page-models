@@ -1,0 +1,826 @@
+/*! ALPHA (NOT FOR RELEASE) 2.7.4 (SVN-####) unstationary 20140305T1058 */
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2010 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+/* Layout helpers
+----------------------------------*/
+/* line 11, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-hidden {
+  display: none;
+}
+
+/* line 12, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-hidden-accessible {
+  position: absolute;
+  left: -99999999px;
+}
+
+/* line 13, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+/* line 14, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 15, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-clearfix {
+  display: inline-block;
+}
+
+/* required comment for clearfix to work in Opera \*/
+/* line 17, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+* html .ui-helper-clearfix {
+  height: 1%;
+}
+
+/* line 18, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-clearfix {
+  display: block;
+}
+
+/* end clearfix */
+/* line 20, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 25, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 32, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 39, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+* jQuery UI CSS Framework
+* Copyright (c) 2010 AUTHORS.txt (http://jqueryui.com/about)
+* Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
+*/
+/* Component containers
+----------------------------------*/
+/* line 51, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget {
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 52, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+/* line 53, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 54, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-content {
+  border: 1px solid #dddddd;
+  background: #eeeeee 50% top repeat-x;
+  color: #333333;
+}
+
+/* line 55, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-content a {
+  color: #333333;
+}
+
+/* line 56, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background: #f6a828 50% 50% repeat-x;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* line 57, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-header a {
+  color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+/* line 61, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #cccccc;
+  background: #f6f6f6 50% 50% repeat-x;
+  font-weight: bold;
+  color: #1c94c4;
+}
+
+/* line 62, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #1c94c4;
+  text-decoration: none;
+}
+
+/* line 63, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #fbcb09;
+  background: #fdf5ce 50% 50% repeat-x;
+  font-weight: bold;
+  color: #c77405;
+}
+
+/* line 64, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-hover a, .ui-state-hover a:hover {
+  color: #c77405;
+  text-decoration: none;
+}
+
+/* line 65, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #fbd850;
+  background: #ffffff 50% 50% repeat-x;
+  font-weight: bold;
+  color: #eb8f00;
+}
+
+/* line 66, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #eb8f00;
+  text-decoration: none;
+}
+
+/* line 67, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget :active {
+  outline: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 71, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fed22f;
+  background: #ffe45c 50% top repeat-x;
+  color: #363636;
+}
+
+/* line 72, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636;
+}
+
+/* line 73, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #b81900 50% 50% repeat;
+  color: #ffffff;
+}
+
+/* line 74, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #ffffff;
+}
+
+/* line 75, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #ffffff;
+}
+
+/* line 76, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+/* line 77, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal;
+}
+
+/* line 78, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none;
+}
+
+/* Icons
+----------------------------------*/
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 89, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-overlay {
+  background: #666666 50% 50% repeat;
+  opacity: .50;
+  filter: Alpha(Opacity=50);
+}
+
+/* line 90, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-widget-shadow {
+  margin: -5px 0 0 -5px;
+  padding: 5px;
+  background: #000000 50% 50% repeat-x;
+  opacity: .20;
+  filter: Alpha(Opacity=20);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Slider
+----------------------------------*/
+/* line 94, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+/* line 95, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+}
+
+/* line 96, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+/* line 98, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-horizontal {
+  height: .8em;
+}
+
+/* line 99, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.3em;
+  margin-left: -.6em;
+}
+
+/* line 100, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+/* line 101, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+/* line 102, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* line 104, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-vertical {
+  width: .8em;
+  height: 100px;
+}
+
+/* line 105, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-vertical .ui-slider-handle {
+  left: -.3em;
+  margin-left: 0;
+  margin-bottom: -.6em;
+}
+
+/* line 106, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-vertical .ui-slider-range {
+  left: 0;
+  width: 100%;
+}
+
+/* line 107, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-vertical .ui-slider-range-min {
+  bottom: 0;
+}
+
+/* line 108, ../../../src/qgov/assets/v2/style/jquery-ui/_jquery-ui-1.8.2.core.widget.mouse.slider.scss */
+.ui-slider-vertical .ui-slider-range-max {
+  top: 0;
+}
+
+@media screen, projection, tv, handheld {
+  /* line 6, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active,
+  .qg-ovt-alternatives,
+  .qg-ovt-options {
+    display: block;
+    clear: both;
+  }
+
+  /* line 13, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active h2,
+  .qg-ovt-active h3,
+  .qg-ovt-active h4 {
+    font-size: 140%;
+  }
+
+  /* line 18, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls ul,
+  .qg-ovt-active .qg-ovt-alternatives ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 23, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls {
+    float: left;
+    clear: both;
+    width: 100%;
+    background: #d5d5d5 url(../images/video/video-controls-bg.png) left top repeat-x;
+    padding-top: 2px;
+    /* Pull the HTML cotrols up over the video controls */
+    position: relative;
+    left: 0;
+    bottom: 20px;
+    margin-bottom: -20px;
+    z-index: 1;
+  }
+
+  /* line 37, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls ul {
+    width: 100%;
+    overflow: hidden;
+    /* display: inline-block; "clearfix" for modern browsers without using overflow:hidden; */
+  }
+
+  /* line 43, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls li {
+    float: left;
+    margin: 0;
+    padding: 4px 4px 6px;
+  }
+
+  /* line 48, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls a {
+    display: block;
+    width: 44px;
+    height: 27px;
+    overflow: hidden;
+  }
+
+  /* line 54, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls a img.for-css-replacement {
+    width: 44px;
+    height: 27px;
+    border: none;
+  }
+
+  /* Important for keyboard access! */
+  /* line 63, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls a.keyboard-focus,
+  .qg-ovt-active .qg-ovt-options a.keyboard-focus {
+    outline: 2px solid #eab754;
+  }
+
+  /* Set sprites! */
+  /* line 69, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls a {
+    background-color: transparent;
+    background-image: url(../images/video/video-ui-sprites.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  /* line 78, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .play a,
+  .qg-ovt-active .qg-ovt-controls .play a:visited {
+    background-position: -88px top;
+  }
+
+  /* line 82, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .play a.pressed,
+  .qg-ovt-active .qg-ovt-controls .play a.pressed:visited {
+    background-position: -88px -27px;
+  }
+
+  /* line 85, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .play a:hover {
+    background-position: -44px top;
+  }
+
+  /* line 88, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .play a.pressed:hover {
+    background-position: -44px -27px;
+  }
+
+  /* line 94, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .captions a,
+  .qg-ovt-active .qg-ovt-controls .captions a:visited {
+    background-position: -88px -162px;
+  }
+
+  /* line 98, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .captions a.pressed,
+  .qg-ovt-active .qg-ovt-controls .captions a.pressed:visited {
+    background-position: left -162px;
+  }
+
+  /* line 102, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .captions a:hover,
+  .qg-ovt-active .qg-ovt-controls .captions a.pressed:hover {
+    background-position: -44px -162px;
+  }
+
+  /* line 108, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .audio-description a,
+  .qg-ovt-active .qg-ovt-controls .audio-description a:visited {
+    background-position: -88px -189px;
+  }
+
+  /* line 112, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .audio-description a.pressed,
+  .qg-ovt-active .qg-ovt-controls .audio-description a.pressed:visited {
+    background-position: left -189px;
+  }
+
+  /* line 116, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .audio-description a:hover,
+  .qg-ovt-active .qg-ovt-controls .audio-description a.pressed:hover {
+    background-position: -44px -189px;
+  }
+
+  /* line 122, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume a,
+  .qg-ovt-active .qg-ovt-controls .volume a:visited {
+    background-position: -88px -135px;
+  }
+
+  /* line 128, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume a.pressed,
+  .qg-ovt-active .qg-ovt-controls .volume a.pressed:visited,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-muted,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-muted:visited {
+    background-position: left -54px;
+  }
+
+  /* line 136, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume a:hover,
+  .qg-ovt-active .qg-ovt-controls .volume a.pressed:hover,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-muted:hover,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-low:hover,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-medium:hover,
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-high:hover {
+    background-position: -44px -54px;
+  }
+
+  /* line 139, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-low {
+    background-position: -88px -81px;
+  }
+
+  /* line 142, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume a.vol-medium {
+    background-position: -88px -108px;
+  }
+
+  /* line 145, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .cqgue-ovt-controls .volume a.vol-high {
+    background-position: -88px -135px;
+  }
+
+  /* line 151, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .fullscreen a,
+  .qg-ovt-active .qg-ovt-controls .fullscreen a:visited {
+    background-position: -88px -189px;
+  }
+
+  /* line 155, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .fullscreen a.pressed,
+  .qg-ovt-active .qg-ovt-controls .fullscreen a.pressed:visited {
+    background-position: left -189px;
+  }
+
+  /* line 159, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .fullscreen a:hover,
+  .qg-ovt-active .qg-ovt-controls .fullscreen a.pressed:hover {
+    background-position: -44px -189px;
+  }
+
+  /* line 167, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .play {
+    padding-left: .5em;
+    padding-right: 1em;
+  }
+
+  /* line 173, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .progress,
+  .qg-ovt-active .qg-ovt-controls .duration {
+    padding: 7px .5em;
+  }
+
+  /* line 176, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .progress {
+    /*width: 4.5em;*/
+    padding-left: 1em;
+    text-align: right;
+  }
+
+ /*
+.qg-ovt-active .qg-ovt-controls .duration {
+	width: 3.5em;
+}*/
+  /* line 186, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-alternatives {
+    border-top: 1px solid #777;
+    background: white url(../images/video/video-options-bg.png) center top repeat-x;
+    overflow: hidden;
+  }
+
+  /* line 191, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-alternatives ul.qg-ovt-options {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* line 197, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .transcript {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* line 203, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .transcript a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: .3em 1.5em .3em 2em;
+    margin: .5em;
+    background: white url(../images/video/plus-flat.png) 0.7em 0.6em no-repeat;
+    border: 1px solid #999;
+  }
+
+  /* line 212, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .transcript a.pressed {
+    background-image: url(../images/video/minus-flat.png);
+    padding-bottom: .85em;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  /* line 218, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .transcript a:hover {
+    background-color: #ffc;
+  }
+
+  /* line 222, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download {
+    float: right;
+    /*margin: .5em 6em .5em 9em;*/
+    /* margin-right of 6em only required if share button is present */
+    margin: .5em .5em .5em 9em;
+    border: 1px solid #aacee8;
+    background: #ebf4fa;
+    padding: .3em 0 0 1em;
+    overflow: hidden;
+    display: inline;
+    /* Required to fix a bug that occurs in WebKit browsers when DOM manipulation occurs */
+  }
+
+  /* line 232, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download .label {
+    float: left;
+  }
+
+  /* line 235, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul {
+    float: right;
+    border-left: 1px solid #aacee8;
+    background: #fff;
+    overflow: hidden;
+    margin-top: -.3em;
+    margin-left: 1em;
+  }
+
+  /* line 246, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul li {
+    float: left;
+  }
+
+  /* line 249, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul li a {
+    padding: .3em .5em;
+    color: #555;
+    display: block;
+    background: transparent url(../images/video/video-download-separator.png) right center no-repeat;
+  }
+
+  /* line 255, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul li a.keyboard-focus {
+    padding: .15em .37em;
+    outline: none;
+    border: 2px solid #f8be4c;
+  }
+
+  /* line 260, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul li.last-child a {
+    background: transparent;
+  }
+
+  /* line 263, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download ul li a:hover {
+    background-color: #ffc;
+    color: #00f;
+  }
+
+  /* Mask elements of the link text that are visually hidden (but still semantically present for assistive technologies) */
+  /* line 268, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-options .download a span {
+    position: absolute;
+    left: -9999px;
+    border: none;
+    outline: none;
+  }
+
+  /*
+  .qg-ovt-active .qg-ovt-options .share {
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	margin: .5em;
+  }
+  
+  .qg-ovt-active .qg-ovt-options .share a {
+  	text-decoration: none;
+  	color: #fff;
+  	padding: .3em 1em;
+  	display: block;
+  	background: #3e3e3e url(../images/video/video-share-bg.png) left top repeat-x;
+  	border: 1px solid #343434;
+  }
+  .qg-ovt-active .qg-ovt-options .share a:hover {
+  	background: #395232 url(../images/video/video-share-bg-hover.png) left top repeat-x;
+  	border: 1px solid #2d4128;
+  }*/
+  /* line 298, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-transcript {
+    background: #fff;
+    margin: 0 1px;
+    clear: both;
+    overflow: hidden;
+  }
+
+  /* line 304, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-transcript .qg-ovt-inner {
+    padding: .5em;
+  }
+
+  /* Sliders */
+  /* line 310, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls li.progress-bar {
+    padding: 0;
+    margin: 11px 0 14px;
+    width: 290px;
+    background: black url(../images/video/video-progress-bg.png) left center repeat-x;
+  }
+
+  /* line 316, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .ui-widget-header {
+    background: transparent url(../images/video/video-progress-playing-bg.png) left center repeat-x;
+  }
+
+  /* line 319, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .progress-bar .ui-slider-handle {
+    background: transparent url(../images/video/video-scrubber-horiz-alpha-trans.png) 50% 50% no-repeat !important;
+    overflow: visible !important;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: -.1em;
+    margin-left: -.75em;
+    cursor: pointer;
+  }
+
+  /* line 328, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .progress-bar.ui-state-disabled .ui-slider-handle {
+    cursor: default;
+  }
+
+  /* line 331, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .progress-bar .load-progress {
+    background: #8deaf4 url(../images/video/video-progress-loading-bg.png) left center repeat-x;
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 345, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .ui-state-focus,
+  .qg-ovt-active .ui-state-hover,
+  .qg-ovt-active .ui-state-default {
+    outline: none;
+    border: none;
+    background: none;
+  }
+
+  /* line 352, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls,
+  .qg-ovt-active .qg-ovt-controls ul,
+  .qg-ovt-active .qg-ovt-controls .volume {
+    position: relative;
+    overflow: visible;
+  }
+
+  /* line 356, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume-overlay {
+    height: 12em;
+    width: 3em;
+    padding: 2em 1em 1em;
+    background: #efefef;
+    position: absolute;
+    left: -1em;
+    top: -14.9em;
+    z-index: 5;
+  }
+
+  /* line 366, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume-slider {
+    height: 10em;
+    margin: auto;
+  }
+
+  /* line 370, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume-slider .ui-slider-range {
+    background: #3170a3;
+  }
+
+  /* line 373, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-controls .volume-slider .ui-slider-handle {
+    background: transparent url(../images/video/video-scrubber-vert-alpha-trans.png) 50% 50% no-repeat !important;
+    overflow: visible !important;
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: -.75em;
+    margin-left: -.1em;
+    cursor: pointer;
+  }
+}
+@media print {
+  /* line 386, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-player,
+  .qg-ovt-active .qg-ovt-alternatives .qg-ovt-options {
+    display: none;
+  }
+
+  /* line 390, ../../../src/qgov/assets/v2/style/pattern/_qg-video.scss */
+  .qg-ovt-active .qg-ovt-transcript {
+    display: block !important;
+  }
+}
