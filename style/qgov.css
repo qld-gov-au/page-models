@@ -3732,3 +3732,14 @@ a:link.smartbanner-button, a:visited.smartbanner-button {
 #smartbanner .aside a:visited {
   color: #fff;
 }
+
+/* minicart */
+#ssq-minicart caption {
+  font-weight: normal;
+  color: #444;
+}
+#ssq-minicart th, td {
+  background: transparent !important;
+  border: 1px none #444 !important;
+  border-style: solid none !important;
+}

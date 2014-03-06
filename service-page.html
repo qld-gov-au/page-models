@@ -12,6 +12,17 @@
 	<!-- layout-small is assumed by default (combined with qgov.css) -->
 	<link href="style/layout-medium.css" media="only all and (min-width: 640px) and (max-width: 980px)" rel="stylesheet" type="text/css" />
 	<link href="style/layout-large.css" media="only all and (min-width: 980px)" rel="stylesheet" type="text/css" />
+
+	<style>
+		#asides #ssq-minicart-cards li {
+			padding: 1em;
+			background: #EAEAEA;
+			display: inline-block;
+			width: 6em;
+			height: 2.5em;
+			border-radius: 5px;
+		}
+	</style>
     
 	<meta name="viewport" content="width=device-width" />
 	
@@ -264,7 +275,41 @@
 				<!--#include virtual="https://www.qld.gov.au/assets/includes/global/global-aside.html"-->
 
 
-				<!-- PUT YOUR ASIDES HERE -->
+				<div class="aside">
+					<div id="ssq-minicart">
+						<h2>Cart</h2>
+						<div id="ssq-minicart-view">
+							<div class="ssq-minicart-items">
+								<table>
+									<caption><span id="ssq-total-items">1</span> item in cart: <span class="total">$50.00</span></caption>
+									<tfoot>
+										<tr>
+											<th colspan="2" scope="row">Total (incl. GST):</th>
+											<td id="ssq-minicart-total" class="number">$50.00</td>
+										</tr>
+										<tr class="gst">
+											<th colspan="2" scope="row">Total GST amount:</th>
+											<td id="ssq-minicart-totalgst" class="number">$0.00</td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr class="alternate"><th scope="col">Item</th><th class="number">Qty</th><th class="number">Amount</th></tr>
+										<tr><td scope="row">Donation to Cyclone Larry Appeal</td><td class="number">1</td><td class="number">$50.00</td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="ssq-minicart-cards" class="aside accepted payment">
+					<h2>We accept</h2>
+					<ul>
+						<li>VISA</li>
+						<li>MasterCard</li>
+					</ul>
+					<small>Credit and debit cards accepted</small>
+				</div>
 
 
 			</div></div></div><!-- end #asides, .box-sizing, .border -->
