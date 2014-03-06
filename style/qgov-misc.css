@@ -825,7 +825,7 @@ blockquote.pull-quote:after {
 .cut-in-alt img {
   border: 1px solid #FFFEFC;
   display: block;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);*/
 }
 
 /* line 26, ../../../src/qgov/assets/v2/style/pattern/_figures.scss */
