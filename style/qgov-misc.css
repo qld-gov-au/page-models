@@ -282,7 +282,7 @@ fieldset.search-inputs {
 /* Table styles */
 /* line 4, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
 caption {
-  color: #05457f;
+  color: #535353;
   /* match h2, h3 */
   text-align: left;
   margin-bottom: .2em;
@@ -313,7 +313,7 @@ tfoot {
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
 thead > tr > th,
 thead > tr > td {
-  background: #2c3a45;
+  background: #535353;
   color: white;
 }
 
@@ -681,7 +681,7 @@ ol.xor > li:first-child::before {
 
   /* line 25, ../../../src/qgov/assets/v2/style/pattern/_what-next.scss */
   #what-next h2 {
-    background: #2C3A45;
+    background: #535353;
     color: #fff;
     padding: .357em .714em;
     /* 140% */
@@ -722,7 +722,7 @@ ol.xor > li:first-child::before {
 
   /* line 53, ../../../src/qgov/assets/v2/style/pattern/_what-next.scss */
   #what-next a:link {
-    color: #437CA9;
+    color: #444;
   }
 
   /* line 56, ../../../src/qgov/assets/v2/style/pattern/_what-next.scss */
@@ -762,7 +762,7 @@ blockquote.pull-quote:after,
 blockquote.pull-quote:before {
   content: "‘";
   font: bold 900%/1.5 Arial, sans-serif;
-  color: #29607F;
+  color: #535353;
   position: absolute;
   top: 0;
   left: 0;
@@ -843,7 +843,7 @@ blockquote.pull-quote:after {
   display: block;
   padding: .2em .5em;
   overflow: hidden;
-  color: #05457f;
+  color: #444;
   /* match h2, h3 */
 }
 
@@ -1462,7 +1462,7 @@ ol.xol > li.disc-c::before {
 /* Default aside */
 /* line 7, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside {
-  color: #293942;
+  color: #444;
   background: #F9F9F9;
   padding: .5em;
   overflow: hidden;
@@ -1481,20 +1481,9 @@ ol.xol > li.disc-c::before {
 /* line 23, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside h2 {
   margin: 0;
-  color: #293942;
+  color: #444;
   font-size: 160%;
   font-weight: normal;
-}
-
-/* links */
-/* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
-.aside a {
-  color: #546a9a;
-}
-
-/* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
-.aside a:visited {
-  color: #576978;
 }
 
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
@@ -1620,7 +1609,7 @@ ol.xol > li.disc-c::before {
 /* line 38, ../../../src/qgov/assets/v2/style/pattern/aside/_contact.scss */
 #asides .emergency-contact {
   border: none;
-  background: #ffdb5e;
+  background: #D8D8D8;
 }
 
 /* line 42, ../../../src/qgov/assets/v2/style/pattern/aside/_contact.scss */
@@ -1778,7 +1767,7 @@ ol.xol > li.disc-c::before {
 #asides .feedback,
 #asides-primary .feedback,
 #asides-secondary .feedback {
-  background: #e7f5fe;
+  background: #D8D8D8;
 }
 
 /* have your say asides */
@@ -2024,7 +2013,7 @@ p.more,
 #asides .story {
   border: none;
   background: transparent;
-  color: #005A7A;
+  color: #444;
 }
 
 /* line 10, ../../../src/qgov/assets/v2/style/pattern/aside/_story.scss */
@@ -2948,42 +2937,42 @@ a.tweet-timestamp:hover {
   padding: 0 1em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: #E5F2FF;
-  background: linear-gradient(top, #e5f2ff, #ffffff);
-  background: -moz-linear-gradient(top, #e5f2ff, white);
-  background: -webkit-linear-gradient(top, #e5f2ff, white);
+  background: #D8D8D8;
+  background: linear-gradient(top, #D8D8D8, #ffffff);
+  background: -moz-linear-gradient(top, #D8D8D8, white);
+  background: -webkit-linear-gradient(top, #D8D8D8, white);
 }
 
 /* line 28, ../../../src/qgov/assets/v2/style/pattern/_comparison.scss */
 .advantage {
-  background: #BDEABF;
-  background: linear-gradient(top, #bdeabf, #ffffff);
-  background: -moz-linear-gradient(top, #bdeabf, white);
-  background: -webkit-linear-gradient(top, #bdeabf, white);
+  background: #D8D8D8;
+  background: linear-gradient(top, #D8D8D8, #ffffff);
+  background: -moz-linear-gradient(top, #D8D8D8, white);
+  background: -webkit-linear-gradient(top, #D8D8D8, white);
 }
 
 /* line 34, ../../../src/qgov/assets/v2/style/pattern/_comparison.scss */
 .advantage .comparison-inner {
-  background: #E7FCEC;
-  background: linear-gradient(top, #e7fcec, #ffffff);
-  background: -moz-linear-gradient(top, #e7fcec, white);
-  background: -webkit-linear-gradient(top, #e7fcec, white);
+  background: #EAEAEA;
+  background: linear-gradient(top, #EAEAEA, #ffffff);
+  background: -moz-linear-gradient(top, #EAEAEA, white);
+  background: -webkit-linear-gradient(top, #EAEAEA, white);
 }
 
 /* line 41, ../../../src/qgov/assets/v2/style/pattern/_comparison.scss */
 .disadvantage {
-  background: #FAB5AC;
-  background: linear-gradient(top, #fab5ac, #ffffff);
-  background: -moz-linear-gradient(top, #fab5ac, white);
-  background: -webkit-linear-gradient(top, #fab5ac, white);
+  background: #D8D8D8;
+  background: linear-gradient(top, #D8D8D8, #ffffff);
+  background: -moz-linear-gradient(top, #D8D8D8, white);
+  background: -webkit-linear-gradient(top, #D8D8D8, white);
 }
 
 /* line 47, ../../../src/qgov/assets/v2/style/pattern/_comparison.scss */
 .disadvantage .comparison-inner {
-  background: #FFECE5;
-  background: linear-gradient(top, #ffece5, #ffffff);
-  background: -moz-linear-gradient(top, #ffece5, white);
-  background: -webkit-linear-gradient(top, #ffece5, white);
+  background: #F6F6F6;
+  background: linear-gradient(top, #F6F6F6, #ffffff);
+  background: -moz-linear-gradient(top, #F6F6F6, white);
+  background: -webkit-linear-gradient(top, #F6F6F6, white);
 }
 
 /* line 54, ../../../src/qgov/assets/v2/style/pattern/_comparison.scss */
@@ -3051,4 +3040,13 @@ kbd {
   border-style: solid;
   border-width: 1px 2px 2px 1px;
   padding: 0 0.2em;
+}
+
+
+/* from data */
+.module-heading .action {
+  float: right;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: underline;
 }
