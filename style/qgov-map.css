@@ -905,7 +905,7 @@
 
 /* line 36, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta {
-  color: green;
+  color: grey;
   font-size: 100%;
   display: block;
   clear: both;

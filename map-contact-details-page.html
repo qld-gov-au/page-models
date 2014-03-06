@@ -13,7 +13,6 @@
 	<link href="style/layout-medium.css" media="only all and (min-width: 640px) and (max-width: 980px)" rel="stylesheet" type="text/css" />
 	<link href="style/layout-large.css" media="only all and (min-width: 980px)" rel="stylesheet" type="text/css" />
     <link href="style/qgov-misc.css" rel="stylesheet" type="text/css" />
-    <link href="style/qgov-map.css" rel="stylesheet" type="text/css" />
 
 	<meta name="viewport" content="width=device-width" />
 	
@@ -109,79 +108,63 @@
 
 <!--#include virtual="https://www.qld.gov.au/assets/includes/global/page-options-pre.html"-->
 
-					<div id="app-viewport">
-						<div id="dataset">
-							<a href="https://data.qld.gov.au/dataset/science-capability-directory/resource/8b9178e0-2995-42ad-8e55-37c15b4435a3">View the data</a>
-						</div>
-					</div>
+					<dl class="grid">
+
+								<dt>Phone:</dt>
+								<dd>13 00 00</dd>
+
+								<dt>Fax:</dt>
+								<dd>(07) 4000 0000</dd>
+
+								<dt>Postal address:</dt>
+								<dd class="location adr">
+									<span class="extended-address">PO Box 400</span><br>
+									<span class="locality">Brisbane</span>&nbsp;
+									<span class="region">QLD</span>&nbsp;
+									<span class="postal-code">4000</span>
+								</dd>
+					
+								<dt>Address:</dt>
+								<dd class="location adr">
+									<span class="street-address">1 Brisbane Road</span><br>
+									<span class="locality">Brisbane</span>&nbsp;
+									<span class="region">QLD</span>&nbsp;
+									<span class="postal-code">4000</span>
+								</dd>
+
+								<dt>Services:</dt>
+								<dd>
+									<ul>
+										<li>Service A</li>
+										<li>Service B</li>
+										<li>Service C</li>
+										<li>Service D</li>
+										<li>Service E</li>
+									</ul>
+								</dd>
+							
+							</dl>
 
 
-					<h2>Displaying search results 1-10 of 100</h2>
+
+					<table class="striped">
+						<caption>General opening hours</caption>
+						<thead>
+							<tr>
+								<th>Day</th>
+								<th>Morning</th>
+								<th>Afternoon</th>
+							</tr>
+						</thead>
+						<tbody class="weekdays">
+							<tr class="even"><th>Monday</th><td>8.30am</td><td>4.00pm</td></tr><tr><th>Tuesday</th><td>8.30am</td><td>4.00pm</td></tr><tr class="even"><th>Wednesday</th><td>9.30am</td><td>4.00pm</td></tr><tr class="today"><th>Thursday</th><td>8.30am</td><td>4.00pm</td></tr><tr class="tomorrow even"><th>Friday</th><td>8.30am</td><td>4.00pm</td></tr>								</tbody>
+						<tbody class="weekends">
+							<tr><th>Saturday</th><td>Closed</td><td>Closed</td></tr><tr class="even"><th>Sunday</th><td>Closed</td><td>Closed</td></tr>								</tbody>
+					</table>
 
 
 
-					<ol class="search-results">
 
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 1">Title of page for result 1</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 2">Title of page for result 2</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 3">Title of page for result 3</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 4">Title of page for result 4</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 5">Title of page for result 5</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 6">Title of page for result 6</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 7">Title of page for result 7</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 8">Title of page for result 8</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-
-						<li style="display: list-item;">
-							<h3><a href="?title=Result 9">Title of page for result 9</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-						<li style="display: list-item;">
-							<h3><a href="?title=Title of page for result 19">Title of page for result 10</a></h3>
-							<p class="search-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla orci libero, tempus vitae ultrices interdum, scelerisque quis tellus…</p>
-							<p class="meta">Category name</p>
-						</li>
-
-
-					</ol>
-
-
-					<div class="pagination"><a class="previous_link  no_more" href="">Previous</a><span class="ellipse less">...</span><a class="page_link  first active_page" href="" longdesc="0">1</a><a class="page_link " href="" longdesc="1">2</a><a class="page_link " href="" longdesc="2">3</a><a class="page_link " href="" longdesc="3">4</a><a class="page_link " href="" longdesc="4">5</a><a class="page_link " href="" longdesc="5" style="display: none;">6</a><a class="page_link " href="" longdesc="6" style="display: none;">7</a><a class="page_link " href="" longdesc="7" style="display: none;">8</a><a class="page_link " href="" longdesc="8" style="display: none;">9</a><a class="page_link  last" href="" longdesc="9" style="display: none;">10</a><span class="ellipse more">...</span><a class="next_link" href="">Next</a></div>
 
 
 				</div></div></div><!-- end .article, .box-sizing, .border -->
@@ -192,52 +175,21 @@
 
 
 				<!-- PUT YOUR ASIDES HERE -->
-				<div id="key-sectors" class="aside key filter">
-					<h2>Key sectors</h2>
-					<ul>
-						<li><a href="?sector=Alpha"><img src="images/skin/sector.png" alt="Alpha" /></a></li>
-						<li><a href="?sector=Beta"><img src="images/skin/sector.png" alt="Beta" /></a></li>
-						<li><a href="?sector=Delta"><img src="images/skin/sector.png" alt="Delta" /></a></li>
-						<li><a href="?sector=Epsilon"><img src="images/skin/sector.png" alt="Epsilon" /></a></li>
-						<li><a href="?sector=Gamma"><img src="images/skin/sector.png" alt="Gamma" /></a></li>
-					</ul>
+
+				<div class="aside map" role="wairole:complementary" aria-labelledby="landmark-label3">
+					<div class="aside-inner">
+						<h2 id="landmark-label3">Map</h2>
+						<div class="figure diagram">
+							<a href="http://maps.google.com/maps?q=1+Brisbane+Road+Brisbane+QLD+4000"><img src="http://maps.googleapis.com/maps/api/staticmap?size=373x189&amp;maptype=roadmap&amp;markers=-17.269614%2C145.4734&amp;key=AIzaSyDH8T8XP9YD9CdKpvPW5YUGRudUNj-MR3Q&amp;sensor=false" alt="Map of 1 Brisbane Road Brisbane QLD 4000"></a><small class="print-link-url"> ( http://maps.google.com/maps?q=1+brisbane+Road+Brisbane+QLD+4000 )</small>								
+							<div class="caption"><span class="street-address">1 Brisbane Road</span><br>
+								<span class="locality">BRISBANE</span>&nbsp;
+								<span class="region">QLD</span>&nbsp;
+								<span class="postal-code">4000</span>
+							</div>	
+						</div>
+					</div>
 				</div>
 
-
-				<div id="search" class="aside search">
-				<h2>Search</h2>
-					<form id="app-viewport-tools-search" class="search">
-						<ol class="questions">
-							<li class="viewport search">
-								<label for="query" class="visuallyhidden">Enter search term</label>
-								<input accesskey="5" type="search" name="query" id="query" size="25" value="" placeholder="Enter search term" />
-								<input class="search-button" type="image" src="images/skin/button-search.png" value="Search" />
-								<a href="#app-viewport-tools-results" class="all">Show all</a>
-							</li>
-							<li class="section">
-								<fieldset>
-									<legend>Filter results by</legend>
-									
-									<ol class="questions">
-										<li>
-											<label for="sector">
-												<span class="label">Sector</span>
-											</label>
-											<select id="sector" name="Sector">
-												<option value="">All</option>
-												<option value="Alpha">Alpha</option>
-												<option value="Beta">Beta</option>
-												<option value="Delta">Delta</option>
-												<option value="Epsilon">Epsilon</option>
-												<option value="Gamma">Gamma</option>
-											</select>
-										</li>
-									</ol>
-								</fieldset>
-							</li>
-						</ol>
-					</form>				
-				</div>
 
 			</div></div></div><!-- end #asides, .box-sizing, .border -->
 
