@@ -51,7 +51,7 @@
 
 /* line 36, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta {
-  color: green;
+  color: grey;
   font-size: 100%;
   display: block;
   clear: both;
@@ -59,7 +59,8 @@
 
 /* line 42, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta a {
-  float: none;
+  float: left;
+  margin: 1em;
 }
 
 /* line 46, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
@@ -1463,11 +1464,11 @@ ol.xol > li.disc-c::before {
 /* line 7, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside {
   color: #444;
-  background: #F9F9F9;
+  background: #D8D8D8;
   padding: .5em;
   overflow: hidden;
   margin: 0 0 1em;
-  border: 1px solid #DCDCDC;
+  border: none;
   border-radius: 2px;
   /*font-size: 90%;*/
 }
@@ -1484,6 +1485,17 @@ ol.xol > li.disc-c::before {
   color: #444;
   font-size: 160%;
   font-weight: normal;
+}
+
+/* links */
+/* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
+.aside a {
+  color: #575958;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
+.aside a:visited {
+  color: #576978;
 }
 
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
