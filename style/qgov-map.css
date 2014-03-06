@@ -81,11 +81,6 @@
   background-image: url(../images/skin/map-marker/icon-zoom-out.png);
 }
 
-/* line 78, ../../../src/qgov/assets/v2/style/pattern/_map.scss */
-.leaflet-bar a {
-  text-indent: -50em;
-}
-
 /* required styles */
 /* line 16, ../../../src/qgov/assets/v2/style/lib/maps/_leaflet.scss */
 .leaflet-map-pane,
@@ -905,7 +900,7 @@
 
 /* line 36, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta {
-  color: green;
+  color: grey !important;
   font-size: 100%;
   display: block;
   clear: both;
