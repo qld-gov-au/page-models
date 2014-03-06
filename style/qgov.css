@@ -3512,7 +3512,7 @@ form em input[type="submit"][disabled] {
 
 /* line 44, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
 .tabs li a {
-  background-color: #2c3a43;
+  background-color: #535353;
   color: #fff;
   padding: .5em 1.5em;
   text-decoration: none;
