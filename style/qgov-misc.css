@@ -283,7 +283,7 @@ fieldset.search-inputs {
 /* Table styles */
 /* line 4, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
 caption {
-  color: #05457f;
+  color: #293942;
   /* match h2, h3 */
   text-align: left;
   margin-bottom: .2em;
@@ -314,7 +314,7 @@ tfoot {
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/_table.scss */
 thead > tr > th,
 thead > tr > td {
-  background: #2c3a45;
+  background: grey;
   color: white;
 }
 
@@ -1490,7 +1490,7 @@ ol.xol > li.disc-c::before {
 /* links */
 /* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside a {
-  color: #546a9a;
+  color: #575958;
 }
 
 /* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
