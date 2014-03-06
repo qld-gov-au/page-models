@@ -1486,17 +1486,6 @@ ol.xol > li.disc-c::before {
   font-weight: normal;
 }
 
-/* links */
-/* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
-.aside a {
-  color: #546a9a;
-}
-
-/* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
-.aside a:visited {
-  color: #576978;
-}
-
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside li a {
   text-decoration: none;
@@ -3051,4 +3040,13 @@ kbd {
   border-style: solid;
   border-width: 1px 2px 2px 1px;
   padding: 0 0.2em;
+}
+
+
+/* from data */
+.module-heading .action {
+  float: right;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: underline;
 }
