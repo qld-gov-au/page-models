@@ -252,12 +252,92 @@
 							</fieldset>
 						</li>
 
-						<li>
-							<label for="attachment">
-								<span class="label">Birth certificate</span>
-								<small class="hint">Attach your file here</small>
+						<li class="section">
+							<fieldset id="applicant">
+								<legend><span class="h2">Applicant details</span></legend>
+								<ol class="questions">
+
+									<li class="group atomic">
+										<fieldset id="applicant-name">
+											<legend>
+												<span class="label">Applicant name</span>
+											</legend>
+
+											<ol class="questions compact">
+												<li class="select1">
+													<label for="applicant-name-title">
+														<span class="label">Title</span>
+													</label>
+													<select id="applicant-name-title" name="applicantNameTitle">
+														<option>Mr</option>
+														<option>Mrs</option>
+														<option>Ms</option>
+														<option>Miss</option>
+														<option>Dr</option>
+														<option>Prof</option>
+													</select>
+												</li>
+												<li class="text required">
+													<label for="applicant-name-given">
+														<span class="label">Given name</span>
+														<abbr title="(required)">*</abbr>
+													</label>
+													<input type="text" id="applicant-name-given" name="applicantGivenName" size="15" required="required" />
+												</li>
+												<li class="text required">
+													<label for="applicant-name-family">
+														<span class="label">Family name</span>
+														<abbr title="(required)">*</abbr>
+													</label>
+													<input type="text" id="applicant-name-family" name="applicantFamilyName" size="15" required="required" />
+												</li>
+											</ol>
+										</fieldset>
+									</li>
+
+									<li id="Q-email" class="email required invalid">
+										<label for="email">
+											<span class="label">Email</span>
+											<abbr title="(required)">*</abbr>
+											<em class="alert">Must be a valid email address</em>
+											<small class="hint privacy">We will never share your email address</small>
+										</label>
+										<input type="email" name="email" id="email" size="40" value="abcdefghijklmnopqrztuvwxyz" required="required" placeholder="jane.smart@example.com" />
+									</li>
+
+									<li id="Q-tel" class="tel">
+										<label for="tel">
+											<span class="label">Phone</span>
+										</label>
+										<input type="tel" name="tel" id="tel" size="20" value="" placeholder="07 5555 5555" />
+									</li>
+
+									<li class="date">
+										<label for="applicant-dob">
+											<span class="label">Date of birth</span>
+											<small class="hint">Day/Month/Year (example: 26/6/1959)</small>
+										</label>
+										<input id="applicant-dob" type="date" name="applicantDateOfBirth" size="20" required="required" />
+									</li>
+
+									<li>
+										<label for="attachment">
+											<span class="label">Birth certificate</span>
+											<small class="hint">Attach your file here</small>
+										</label>
+										<input type="file" id="attachment" name="attachment" accept="application/pdf,image/jpeg" />
+									</li>
+								</ol>
+							</fieldset>
+						</li>
+
+						<li class="textarea required">
+							<label for="comments">
+								<span class="label">Comments</span>
+								<abbr title="(required)">*</abbr>
+								<small class="hint">Maximum: 50 words</small>
 							</label>
-							<input type="file" id="attachment" name="attachment" accept="application/pdf,image/jpeg" />
+							<textarea name="comments" id="comments" rows="10" cols="40" required="required"></textarea>
 						</li>
 
 						<li class="footer">

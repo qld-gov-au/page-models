@@ -2789,22 +2789,6 @@ textarea[readonly] {
   color: #444;
 }
 
-/* question states */
-/* line 152, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
-.invalid .alert {
-  color: #AD0720;
-}
-
-/* line 158, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
-.invalid > button,
-.invalid > input,
-.invalid > select,
-.invalid > textarea {
-  border-color: #E5A5AD;
-  color: #AD0720;
-  font-weight: normal;
-}
-
 /* focus */
 /* line 167, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 button.focus,
@@ -2874,7 +2858,7 @@ li.section li.section {
 legend .h2,
 legend .h3 {
   display: block;
-  color: #05457f;
+  /*color: #05457f;*/
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 150%;
