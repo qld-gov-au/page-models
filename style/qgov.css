@@ -2547,7 +2547,7 @@ table .number {
   background: #EEF4F6;
   background-position: 18px 1em;
   background-repeat: no-repeat;
-  border: 1px solid #74AFE2;
+  /*border: 1px solid #74AFE2;*/
 }
 
 /* status in butterfly lightbox */
@@ -2592,9 +2592,16 @@ table .number {
 
 /* line 43, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .warn {
-  background-color: #FFFBE6;
+  background-color: #EAEAEA;
   background-image: url(../images/skin/icon-warn.png);
-  border-color: #FFE7AC;
+  /*border-color: #FFE7AC;*/
+}
+.warn:before {
+  content: "!";
+  font-size: 300%;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -5px;
 }
 
 /* line 48, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
