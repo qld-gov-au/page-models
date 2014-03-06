@@ -1203,7 +1203,7 @@ dd#document-licence {
   margin: 0 0 .3em -2.85em;
   float: left;
   background: #DDECF1;
-  color: #05457F;
+  color: #444;
   min-width: 1.5em;
   text-align: center;
 }
@@ -1351,7 +1351,7 @@ dd#document-licence {
   #nav-section ul li.current-page .current {
     font-weight: bold;
     text-decoration: none !important;
-    background: #559FB8;
+    background: #d8d8d8;
     padding-right: 20px !important;
   }
 
