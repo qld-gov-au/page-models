@@ -1161,7 +1161,7 @@ dd#document-licence {
   margin: 0 0 .3em -2.85em;
   float: left;
   background: #DDECF1;
-  color: #05457F;
+  color: #444;
   min-width: 1.5em;
   text-align: center;
 }
@@ -1309,7 +1309,7 @@ dd#document-licence {
   #nav-section ul li.current-page .current {
     font-weight: bold;
     text-decoration: none !important;
-    background: #559FB8;
+    background: #d8d8d8;
     padding-right: 20px !important;
   }
 
@@ -2428,7 +2428,7 @@ table .number {
 #asides .subscribe h2,
 #asides-primary .subscribe h2,
 #asides-secondary .subscribe h2 {
-  background: transparent url(../images/skin/icon-feed.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2437,7 +2437,7 @@ table .number {
 #asides .tip h2,
 #asides-primary .tip h2,
 #asides-secondary .tip h2 {
-  background: transparent url(../images/skin/icon-tip.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2446,7 +2446,7 @@ table .number {
 #asides .map h2,
 #asides-primary .map h2,
 #asides-secondary .map h2 {
-  background: transparent url(../images/skin/icon-map.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2455,7 +2455,7 @@ table .number {
 #asides .sponsors h2,
 #asides-primary .sponsors h2,
 #asides-secondary .sponsors h2 {
-  background: transparent url(../images/skin/icon-stars.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2464,7 +2464,7 @@ table .number {
 #asides .search h2,
 #asides-primary .search h2,
 #asides-secondary .search h2 {
-  background: transparent url(../images/skin/icon-search.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2473,7 +2473,7 @@ table .number {
 #asides .your-say h2,
 #asides-primary .your-say h2,
 #asides-secondary .your-say h2 {
-  background: transparent url(../images/skin/icon-your-say.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding-left: 40px;
 }
 
@@ -2485,7 +2485,7 @@ table .number {
 #asides .idw h2,
 #asides-primary .idw h2,
 #asides-secondary .idw h2 {
-  background: transparent url(../images/skin/icon-login.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding-left: 40px;
 }
 
@@ -2494,7 +2494,7 @@ table .number {
 #asides .feedback h2,
 #asides-primary .feedback h2,
 #asides-secondary .feedback h2 {
-  background: transparent url(../images/skin/icon-feedback.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2505,7 +2505,7 @@ table .number {
   background: #EEF4F6;
   background-position: 18px 1em;
   background-repeat: no-repeat;
-  border: 1px solid #74AFE2;
+  /*border: 1px solid #74AFE2;*/
 }
 
 /* status in butterfly lightbox */
@@ -2530,42 +2530,48 @@ table .number {
 /* line 28, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .info {
   background-color: #EEF4F6;
-  background-image: url(../images/skin/icon-info.png);
+  background-image: url(../images/skin/icon-blank-lrg.jpg);
   border-color: #74AFE2;
 }
 
 /* line 33, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .success-step {
   background-color: #EEF4F6;
-  background-image: url(../images/skin/icon-success.png);
+  background-image: url(../images/skin/icon-blank-lrg.jpg);
   border-color: #74AFE2;
 }
 
 /* line 38, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .success {
   background-color: #F2F7EA;
-  background-image: url(../images/skin/icon-success.png);
+  background-image: url(../images/skin/icon-blank-lrg.jpg);
   border-color: #AECF80;
 }
 
 /* line 43, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .warn {
-  background-color: #FFFBE6;
-  background-image: url(../images/skin/icon-warn.png);
-  border-color: #FFE7AC;
+  background-color: #D8D8D8;
+}
+.warn:before {
+  content: "!";
+  font-size: 300%;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -5px;
+  border-color: #C2C2C2;
 }
 
 /* line 48, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 .fail {
   background-color: #FEE6E8;
-  background-image: url(../images/skin/icon-fail.png);
+  background-image: url(../images/skin/icon-blank-lrg.jpg);
   border-color: #EB6E78;
 }
 
 /* line 54, ../../../src/qgov/assets/v2/style/pattern/_status.scss */
 div.download {
   background-color: #EEF4F6;
-  background-image: url(../images/skin/icon-download.png);
+  background-image: url(../images/skin/icon-blank-lrg.jpg);
   border-color: #74AFE2;
 }
 
@@ -2740,22 +2746,6 @@ textarea[readonly] {
   color: #444;
 }
 
-/* question states */
-/* line 152, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
-.invalid .alert {
-  color: #AD0720;
-}
-
-/* line 158, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
-.invalid > button,
-.invalid > input,
-.invalid > select,
-.invalid > textarea {
-  border-color: #E5A5AD;
-  color: #AD0720;
-  font-weight: normal;
-}
-
 /* focus */
 /* line 167, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 button.focus,
@@ -2771,14 +2761,6 @@ input[type=radio]:focus {
   box-shadow: 0 0 0 1px #eab754;
 }
 
-/* line 174, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
-.questions li.active {
-  background: #FFFBE6;
-  background: linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
-  background: -moz-linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
-  background: -webkit-linear-gradient(top, #fffbe6, rgba(255, 251, 230, 0));
-}
-
 /* don't highlight sections */
 /* line 181, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 .questions li.section {
@@ -2788,8 +2770,8 @@ input[type=radio]:focus {
 /* Forms */
 /* line 187, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 .form {
-  background: #f9f9f9;
-  border: 1px solid #dbdbdb;
+  background: #EAEAEA;
+  border: 1px solid #EAEAEA;
   padding: .5em;
 }
 
@@ -2833,7 +2815,7 @@ li.section li.section {
 legend .h2,
 legend .h3 {
   display: block;
-  color: #05457f;
+  color: #444;
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 150%;
@@ -2935,7 +2917,7 @@ legend .hint .help {
 /* required fields */
 /* line 301, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 abbr[title*="required"] {
-  color: red;
+  /*color: red;*/
   border-bottom: none;
   text-decoration: none;
 }
@@ -2951,7 +2933,7 @@ abbr[title*="required"] {
 
 /* line 313, ../../../src/qgov/assets/v2/style/pattern/form/_form.scss */
 abbr.required {
-  color: red;
+  /*color: red;*/
   border-bottom: none;
   text-decoration: none;
 }
@@ -3151,8 +3133,8 @@ form button,
 #post-page-options .button {
   padding: 1em 1.5em;
   max-width: none;
-  /*border: 2px groove #6B7175;
-  border-radius: .5em;*/
+  border: 2px solid #444;
+  border-radius: .5em;
   font-weight: bold;
   font-style: normal;
   color: #fff;
@@ -3173,44 +3155,6 @@ form button,
   padding-bottom: .5em;
 }
 
-/* interaction states */
-/* line 75, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form button:hover,
-form button:focus,
-.ui-button:hover,
-.ui-button:focus,
-.ui-widget .ui-button:hover,
-.ui-widget .ui-button:focus,
-.actions .button:hover,
-.actions .button:focus,
-.poll .button:hover,
-.poll .button:focus,
-.actions input:hover,
-.actions input:focus {
-  background-color: #3b3f41;
-  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
-  box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 2px;
-}
-
-/* line 85, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form button:active,
-.ui-button:active,
-.ui-widget .ui-button:active,
-.actions .button:active,
-.poll .button:active,
-.actions input:active {
-  /* TODO subtle move text down to simulate press */
-  /* subtle text darken */
-  color: #eee;
-  /* reverse gradient */
-  background-color: #393E41;
-  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzNCM0Y0MSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzc2Nzk3QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
-  /* lighter text shadow */
-  text-shadow: 0 0 1px #444;
-  /* darker, smaller shadow when pressed */
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 2px;
-}
-
 /* primary action */
 /* line 104, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
 form strong button,
@@ -3220,41 +3164,12 @@ strong .ui-button,
 .poll .button,
 .actions strong input {
   text-shadow: 0 0 1px #000;
-  border-color: #98C652;
+  border-color: #929292;
   padding-right: 2em;
-  background-color: #5B7D2A;
+  background-color: #535353;
   /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzZmOWEzMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzU3NzgyOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzk1YzQ1MCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY5OTIzMiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
   background-size: 1.8em 100%, 100% 100%;
   background-position: right, right;
-}
-
-/* line 124, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form strong button:hover,
-form strong button:focus,
-strong .ui-button:hover,
-strong .ui-button:focus,
-.ui-widget strong .ui-button:hover,
-.ui-widget strong .ui-button:focus,
-.actions strong .button:hover,
-.actions strong .button:focus,
-.poll .button:hover,
-.poll .button:focus,
-.actions strong input:hover,
-.actions strong input:focus {
-  background-color: #89BC49;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
-}
-
-/* line 133, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form strong button:active,
-strong .ui-button:active,
-.ui-widget strong .button:active,
-.actions strong .button:active,
-.poll .button:active,
-.actions strong input:active {
-  /* reverse gradient */
-  background-color: #689132;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRjNmEyMCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzYzOGIyYiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzRGNzgxOCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0FBREU1QiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
 }
 
 /* alternate primary action */
@@ -3268,35 +3183,9 @@ em .ui-button,
   border-color: #3085A2;
   padding-right: 2em;
   background-color: #234A68;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIzNGU2YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzEzMzQ0YSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
-  background-size: 1.8em 100%, 100% 100%;
-  background-position: right, right;
-}
-
-/* line 161, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form em button:hover,
-form em button:focus,
-em .ui-button:hover,
-em .ui-button:focus,
-.ui-widget em .ui-button:hover,
-.ui-widget em .ui-button:focus,
-.actions em .button:hover,
-.actions em .button:focus,
-.actions em input:hover,
-.actions em input:focus {
-  background-color: #3085A2;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
-}
-
-/* line 169, ../../../src/qgov/assets/v2/style/pattern/form/_button.scss */
-form em button:active,
-em .ui-button:active,
-.ui-widget em .ui-button:active,
-.actions em .button:active,
-.actions em input:active {
-  /* reverse gradient */
-  background-color: #234A68;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzBlMmQ0MiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFhNDE1YyIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzFDNDE1RCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzQ2OUZCRSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');
+  /*background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzIzNGU2YyIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzEzMzQ0YSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZD0iTTEwMCAwaC0xMDBsNjAgNTAtNjAgNTBoMTAweiIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg=='), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iIzJGODRBMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzFGNTY2OCIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTAgMGgxMDB2MTAwaC0xMDB6Ii8+PC9zdmc+');*/
+  /*background-size: 1.8em 100%, 100% 100%;*/
+  /*background-position: right, right;*/
 }
 
 /* disabled buttons */
@@ -3470,7 +3359,7 @@ form em input[type="submit"][disabled] {
 
 /* line 44, ../../../src/qgov/assets/v2/style/pattern/_tabs.scss */
 .tabs li a {
-  background-color: #2c3a43;
+  background-color: #535353;
   color: #fff;
   padding: .5em 1.5em;
   text-decoration: none;
@@ -3783,4 +3672,15 @@ a:link.smartbanner-button, a:visited.smartbanner-button {
 /* line 103, ../../../src/qgov/assets/v2/style/pattern/_smart-banner.scss */
 #smartbanner .aside a:visited {
   color: #fff;
+}
+
+/* minicart */
+#ssq-minicart caption {
+  font-weight: normal;
+  color: #444;
+}
+#ssq-minicart th, td {
+  background: transparent !important;
+  border: 1px none #444 !important;
+  border-style: solid none !important;
 }

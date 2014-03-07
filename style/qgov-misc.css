@@ -51,7 +51,7 @@
 
 /* line 36, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta {
-  color: green;
+  color: grey;
   font-size: 100%;
   display: block;
   clear: both;
@@ -59,7 +59,8 @@
 
 /* line 42, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
 .search-results .meta a {
-  float: none;
+  float: left;
+  margin: 1em;
 }
 
 /* line 46, ../../../src/qgov/assets/v2/style/page-model/_search-results.scss */
@@ -825,7 +826,7 @@ blockquote.pull-quote:after {
 .cut-in-alt img {
   border: 1px solid #FFFEFC;
   display: block;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);*/
 }
 
 /* line 26, ../../../src/qgov/assets/v2/style/pattern/_figures.scss */
@@ -1463,11 +1464,11 @@ ol.xol > li.disc-c::before {
 /* line 7, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside {
   color: #444;
-  background: #F9F9F9;
+  background: #D8D8D8;
   padding: .5em;
   overflow: hidden;
   margin: 0 0 1em;
-  border: 1px solid #DCDCDC;
+  border: none;
   border-radius: 2px;
   /*font-size: 90%;*/
 }
@@ -1484,6 +1485,17 @@ ol.xol > li.disc-c::before {
   color: #444;
   font-size: 160%;
   font-weight: normal;
+}
+
+/* links */
+/* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
+.aside a {
+  color: #575958;
+}
+
+/* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
+.aside a:visited {
+  color: #576978;
 }
 
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
@@ -1517,7 +1529,7 @@ ol.xol > li.disc-c::before {
 #asides .app h2,
 #asides-primary .app h2,
 #asides-secondary .app h2 {
-  background: transparent url(../images/skin/icon-tip.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -1565,7 +1577,7 @@ ol.xol > li.disc-c::before {
 #asides .contact h2,
 #asides-primary .contact h2,
 #asides-secondary .contact h2 {
-  background: transparent url(../images/skin/icon-contact.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -1614,7 +1626,7 @@ ol.xol > li.disc-c::before {
 
 /* line 42, ../../../src/qgov/assets/v2/style/pattern/aside/_contact.scss */
 #asides .emergency-contact p {
-  background: transparent url(../images/skin/icon-emergency-contact.png) left center no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) left center no-repeat;
   padding: 1em 0 1em 58px;
   min-height: 3.5em;
   margin: 0;
@@ -1655,7 +1667,7 @@ ol.xol > li.disc-c::before {
 #asides .disaster h2,
 #asides-primary .disaster h2,
 #asides-secondary .disaster h2 {
-  background: transparent url(../images/skin/icon-alert.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -2625,27 +2637,27 @@ div#minicart {
 /* tab icons */
 /* line 74, ../../../src/qgov/assets/v2/style/pattern/_content-type-tools.scss */
 #tab-headspace-button {
-  background-image: url("../images/skin/icon-headspace.png");
+  background-image: url("../images/skin/icon-blank.jpg");
 }
 
 /* line 77, ../../../src/qgov/assets/v2/style/pattern/_content-type-tools.scss */
 #tab-health-button {
-  background-image: url("../images/skin/icon-health.png");
+  background-image: url("../images/skin/icon-blank.jpg");
 }
 
 /* line 80, ../../../src/qgov/assets/v2/style/pattern/_content-type-tools.scss */
 #tab-money-button {
-  background-image: url("../images/skin/icon-money.png");
+  background-image: url("../images/skin/icon-blank.jpg");
 }
 
 /* line 83, ../../../src/qgov/assets/v2/style/pattern/_content-type-tools.scss */
 #tab-transport-button {
-  background-image: url("../images/skin/icon-transport.png");
+  background-image: url("../images/skin/icon-blank.jpg");
 }
 
 /* line 86, ../../../src/qgov/assets/v2/style/pattern/_content-type-tools.scss */
 #tab-safety-button {
-  background-image: url("../images/skin/icon-safety.png");
+  background-image: url("../images/skin/icon-blank.jpg");
 }
 
 /* icons pattern */
