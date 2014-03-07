@@ -765,7 +765,7 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
 }
 /* line 3, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
 #banner {
-  background: #017197;
+  /*background: #017197;*/
   padding: 1em 0;
   overflow: auto;
 }
@@ -781,19 +781,19 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
   margin: 0;
 }
 /* line 22, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
-#banner h2 img {
+#banner h2 a {
   display: block;
   margin: 0 .85em;
 }
 /* line 29, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
 #banner #search-form div {
-  border: none;
+  overflow: hidden;
 }
 
 /* line 35, ../../../src/qgov/assets/v2/style/template/_header-banner.scss */
 #banner a:link,
 #banner a:visited {
-  color: #fff;
+  /*color: #fff;*/
   text-decoration: none;
 }
 
@@ -813,7 +813,7 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
 
 /* line 11, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
 #nav-site .max-width {
-  max-width: 84em;
+  /*max-width: 84em;*/
   /* +2em on header and content*/
   overflow: visible;
   /* required so that :before/:after corners are visible; overflow hidden moved to #nav-site ul */
@@ -828,8 +828,9 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
 #nav-site .max-width a:link,
 #nav-site .max-width a:visited {
   /* gradient 2C9EFE, 0055A4 */
-  background: #2c9efe url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzJDOUVGRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwNTVBNCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzU3KSIgLz4KPC9zdmc+);
-  color: #fff;
+  /*background: #2c9efe url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzJDOUVGRSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzAwNTVBNCIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzU3KSIgLz4KPC9zdmc+);*/
+  background: #D8D8D8;
+  /*color: #fff;*/
 }
 
 /* line 25, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
@@ -838,31 +839,9 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
   /* fix box for styling and layout, contents are floated */
 }
 
-/* line 28, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
-#nav-site .max-width:before {
-  border-color: #0B1A25 transparent;
-  border-style: solid;
-  border-width: 1em 0 0 1em;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1em;
-}
-
-/* line 37, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
-#nav-site .max-width:after {
-  border-color: #0B1A25 transparent;
-  border-style: solid;
-  border-width: 1em 1em 0 0;
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -1em;
-}
-
 /* line 46, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
 #nav-site + #page-container {
-  background: #eee;
+  /*background: #444;*/
   margin-top: -1.5em;
   padding-top: 1.5em;
 }
@@ -876,37 +855,16 @@ http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working 
 
 /* line 57, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
 #nav-site .max-width li {
-  border-right: 1px solid #0055A4;
+  border-right: 1px solid #444;
   margin: 0;
   padding: 0;
   position: relative;
-}
-
-/* line 64, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
-#nav-site .max-width a.active:after,
-#nav-site .max-width li.current-section:after {
-  border: 0.7em solid rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  content: " ";
-  height: 0;
-  width: 0;
-  margin-left: -.7em;
 }
 
 /* line 75, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
 #nav-site .max-width a {
   margin: 0;
   padding: 1.35em 1.5em 1em;
-}
-
-/* line 80, ../../../src/qgov/assets/v2/style/template/_nav-site-bar.scss */
-#nav-site .max-width a:hover,
-#nav-site .max-width a:active {
-  /* reverse gradient */
-  background: #0055a4 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxNzQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMwMDU1QTQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMyQzlFRkUiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxNzQpIiAvPgo8L3N2Zz4=);
 }
 
 /* line 3, ../../../src/qgov/assets/v2/style/template/_breadcrumbs.scss */

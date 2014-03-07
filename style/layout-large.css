@@ -697,7 +697,7 @@
   #ia .d1 ul li,
   .home #ia ul li,
   .home #questions ol li {
-    list-style: square url(../images/skin/bullet-small-list.png);
+    list-style: disc;
     margin: .5em 0;
   }
 
