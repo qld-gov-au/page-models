@@ -489,7 +489,7 @@
 .audience-index h1,
 .topic-index h1,
 .topic-index-with-asides h1 {
-  background: #293942;
+  background: #535353;
   color: #fff;
   font-size: 180%;
   font-weight: normal;
@@ -532,32 +532,32 @@
     text-decoration: none;
     text-transform: none;
     background: transparent;
-    color: #546a9a;
+    color: #444;
   }
   /* line 60, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia ul a:hover {
     background: transparent;
-    color: #546a9a;
+    color: #444;
     text-decoration: underline;
   }
   /* line 65, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia ul a:active {
     background: transparent;
-    color: #546a9a;
+    color: #535353;
     text-decoration: underline;
   }
 
   /* line 72, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia h2 a {
-    color: #0066cc;
+    color: #444;
   }
   /* line 74, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia h2 a:hover {
-    color: #0066cc;
+    color: #444;
   }
   /* line 77, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia h2 a:active {
-    color: #cc0000;
+    color: #535353;
   }
 
   /* no thumbnails on deep (4th level?) IA pages */
@@ -603,12 +603,12 @@
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-5deg);
-    border-color: #06c;
+    border-color: #444;
   }
 
   /* line 117, ../../../src/qgov/assets/v2/style/page-model/_ia-large-medium.scss */
   #ia .d1 a:visited:hover img {
-    border-color: #576978;
+    border-color: #535353;
   }
 
   /* Mini thumbs for high-level audience index */
