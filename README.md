@@ -7,9 +7,9 @@ Wireframes of page models for Queensland Government websites and applications.
 Content page models
 -------------------
 
-- [Content: generic](content-page.html)
-- [Content: charts and tabs](content-page-charts-tabs.html)
-- [Content: checklists](content-page-checklist.html)
+- [Content: generic](http://qld-gov-au.github.io/page-models/content-page.html)
+- [Content: charts and tabs](http://qld-gov-au.github.io/page-models/content-page-charts-tabs.html)
+- [Content: checklists](http://qld-gov-au.github.io/page-models/content-page-checklist.html)
 - [Map: search results](http://qld-gov-au.github.io/page-models/map-page.html)
 - [Map: counter details](http://qld-gov-au.github.io/page-models/map-contact-details-page.html)
 
@@ -17,4 +17,5 @@ Content page models
 Index page models
 -----------------
 
-- [Franchise landing page](franchise-landing-page.html)
+- [Homepage](http://qld-gov-au.github.io/page-models/homepage.html)
+- [Franchise landing page](http://qld-gov-au.github.io/page-models/franchise-landing-page.html)
