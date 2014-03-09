@@ -67,7 +67,7 @@
   .news-feature .section h3,
   #related-promotions .aside h3 {
     margin-top: 0;
-    color: #002d46;
+    color: #444;
     font-size: 120%;
     font-weight: bold;
     margin: .5em .6em 0;
@@ -522,7 +522,7 @@
 /* Default aside */
 /* line 7, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside {
-  color: #293942;
+  color: #444;
   background: #F9F9F9;
   padding: .5em;
   overflow: hidden;
@@ -541,7 +541,7 @@
 /* line 23, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside h2 {
   margin: 0;
-  color: #293942;
+  color: #444;
   font-size: 160%;
   font-weight: normal;
 }
@@ -549,12 +549,12 @@
 /* links */
 /* line 32, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside a {
-  color: #546a9a;
+  color: #535353;
 }
 
 /* line 36, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
 .aside a:visited {
-  color: #576978;
+  color: #535353;
 }
 
 /* line 39, ../../../src/qgov/assets/v2/style/pattern/aside/_aside.scss */
@@ -636,7 +636,7 @@
 #asides .contact h2,
 #asides-primary .contact h2,
 #asides-secondary .contact h2 {
-  background: transparent url(../images/skin/icon-contact.png) 0 0 no-repeat;
+  background: transparent url(../images/skin/icon-blank.jpg) 0 0 no-repeat;
   padding: .2em 0 .2em 40px;
 }
 
@@ -1107,7 +1107,7 @@ p.more,
 .section-header h2,
 .section-header h3 {
   margin: 0;
-  color: #293942;
+  color: #444;
   font-weight: normal;
 }
 
@@ -1157,7 +1157,7 @@ p.more,
 .home #ia .section-header,
 .home #services .section-header {
   color: white;
-  background: #293942;
+  background: #444;
   padding: .4em .7em;
 }
 

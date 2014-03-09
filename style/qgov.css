@@ -1565,7 +1565,7 @@ dd#document-licence {
   .topic-index h1,
   .topic-index-with-asides h1 {
     background: none;
-    color: #293942;
+    color: #444;
     font-weight: bold;
     font-size: 150%;
     padding-top: 0;
@@ -1973,17 +1973,17 @@ a.keyboard-focus,
 
   /* line 52, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
   #ia a {
-    background: #01687F;
+    background: #535353;
     color: white;
   }
   /* line 55, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
   #ia a:hover {
-    background: #017197;
+    background: #777;
     color: white;
   }
   /* line 59, ../../../src/qgov/assets/v2/style/page-model/_ia.scss */
   #ia a:active {
-    background: #014663;
+    background: #777;
     color: white;
   }
 
