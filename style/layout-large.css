@@ -614,7 +614,7 @@
   #ia .d1 img {
     background: #F9F9F9;
     border: 1px solid #FFFEFC;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 1px;
+    box-shadow: none;
     display: block;
     height: 75px;
     left: 13px;
