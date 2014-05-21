@@ -3679,3 +3679,25 @@ a:link.smartbanner-button, a:visited.smartbanner-button {
   border: 1px none #444 !important;
   border-style: solid none !important;
 }
+
+
+/* process menu in content */
+#nav-process a {
+  display: block;
+  background: #EAEAEA;
+  text-decoration: none;
+  margin: 1em 0;
+  padding: .5em 0;
+}
+
+
+#nav-process ul,
+#nav-process ol {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#nav-process ol {
+  display: none;
+}
