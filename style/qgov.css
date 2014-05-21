@@ -1174,11 +1174,6 @@ dd#document-licence {
   font-weight: bold;
 }
 
-/* line 20, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
-#nav-section li.current a .page-number {
-  color: #559FB8;
-}
-
 /* line 24, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
 #nav-section a[href]:hover .page-number {
   background: white;
@@ -3683,4 +3678,26 @@ a:link.smartbanner-button, a:visited.smartbanner-button {
   background: transparent !important;
   border: 1px none #444 !important;
   border-style: solid none !important;
+}
+
+
+/* process menu in content */
+#nav-process a {
+  display: block;
+  background: #EAEAEA;
+  text-decoration: none;
+  margin: 1em 0;
+  padding: .5em 0;
+}
+
+
+#nav-process ul,
+#nav-process ol {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#nav-process ol {
+  display: none;
 }
