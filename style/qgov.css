@@ -1174,11 +1174,6 @@ dd#document-licence {
   font-weight: bold;
 }
 
-/* line 20, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
-#nav-section li.current a .page-number {
-  color: #559FB8;
-}
-
 /* line 24, ../../../src/qgov/assets/v2/style/template/_nav-section.scss */
 #nav-section a[href]:hover .page-number {
   background: white;
